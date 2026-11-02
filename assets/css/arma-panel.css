@@ -1,0 +1,1581 @@
+/**
+ * Arma Panel - Main Stylesheet
+ * Responsive, RTL-first, modern customer panel.
+ */
+
+:root {
+    --arma-primary: #e11d48;
+    --arma-primary-hover: #be123c;
+    --arma-primary-light: #fff1f2;
+    --arma-secondary: #475569;
+    --arma-background: #f8fafc;
+    --arma-card: #ffffff;
+    --arma-text: #1e293b;
+    --arma-text-muted: #64748b;
+    --arma-heading: #0f172a;
+    --arma-border: #f1f5f9;
+    --arma-border-hover: #e2e8f0;
+    --arma-link: #e11d48;
+    --arma-success: #10b981;
+    --arma-success-bg: #ecfdf5;
+    --arma-warning: #f59e0b;
+    --arma-warning-bg: #fffbeb;
+    --arma-danger: #ef4444;
+    --arma-danger-bg: #fef2f2;
+    --arma-radius-sm: 8px;
+    --arma-radius-md: 12px;
+    --arma-radius-lg: 16px;
+    --arma-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --arma-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --arma-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.06), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
+    --arma-font: inherit;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body.arma-panel-body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--arma-font);
+    background-color: var(--arma-background);
+    color: var(--arma-text);
+    direction: rtl;
+    text-align: right;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Base Wrapper */
+.arma-wrapper {
+    /* width:100% guarantees the panel keeps its full size even when content
+       is sparse — without it, theme containers using flex/grid make the
+       wrapper shrink-to-fit (narrow, ugly layout on empty sections).
+       border-box is global, so padding never overflows.
+       v1.4.0: padding removed per admin request (the theme container
+       provides the spacing) — phones keep a small edge margin below. */
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/* Grid Layout */
+.arma-layout {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+/* Sidebar on Right */
+.arma-sidebar {
+    width: 290px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: var(--arma-sidebar-bg, var(--arma-card));
+    border: 1px solid var(--arma-sidebar-border, var(--arma-border));
+    border-radius: var(--arma-radius-lg);
+    padding: 14px 10px;
+    box-shadow: var(--arma-shadow-sm);
+}
+
+.arma-sidebar .arma-card {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.arma-card {
+    background: var(--arma-card);
+    border: 1px solid #eef0f4;
+    box-shadow: 0 2px 12px rgba(16, 24, 40, 0.04);
+    /* admin radius setting applies again — a later hardcoded 16px used to
+       override it (v1.7.0 audit fix) */
+    border-radius: var(--arma-radius-lg);
+    overflow: hidden;
+}
+
+/* User Profile Card */
+.arma-profile-card {
+    position: relative;
+    padding: 24px 20px 20px;
+    text-align: center;
+}
+
+.arma-profile-card__bell {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--arma-border);
+    color: var(--arma-secondary);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.arma-profile-card__bell:hover {
+    color: var(--arma-primary);
+    border-color: var(--arma-primary);
+    background: var(--arma-primary-light);
+}
+
+.arma-profile-card__bell svg {
+    width: 18px;
+    height: 18px;
+}
+
+.arma-badge-dot {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    min-width: 16px;
+    height: 16px;
+    padding: 0 4px;
+    border-radius: 8px;
+    background: var(--arma-danger);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+}
+
+.arma-profile-card__avatar {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--arma-border);
+    background: #f8fafc;
+    overflow: hidden;
+}
+
+.arma-profile-card__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arma-profile-card__avatar svg {
+    width: 44px;
+    height: 44px;
+    color: #94a3b8;
+}
+
+.arma-profile-card__name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--arma-heading);
+    margin: 0 0 6px;
+}
+
+.arma-profile-card__user-id {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: #f1f5f9;
+    color: var(--arma-text-muted);
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+
+/* Sidebar Navigation Menu */
+.arma-nav {
+    padding: 8px 0;
+}
+
+.arma-nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.arma-nav__item {
+    margin: 2px 10px;
+}
+
+.arma-nav__link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border-radius: var(--arma-radius-sm);
+    color: var(--arma-sidebar-text, var(--arma-text));
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.arma-nav__link svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: var(--arma-sidebar-text, var(--arma-secondary));
+    opacity: 0.75;
+    transition: color 0.2s;
+}
+
+.arma-nav__link:hover {
+    background: var(--arma-sidebar-hover-bg, #f8fafc);
+    color: var(--arma-primary);
+}
+
+.arma-nav__link:hover svg {
+    color: var(--arma-primary);
+}
+
+.arma-nav__item--active .arma-nav__link {
+    background: var(--arma-sidebar-active-bg, var(--arma-primary));
+    color: var(--arma-sidebar-active-text, #ffffff);
+    font-weight: 600;
+    box-shadow: 0 2px 8px -2px var(--arma-primary);
+}
+
+.arma-nav__item--active .arma-nav__link svg {
+    color: var(--arma-sidebar-active-text, #ffffff);
+    opacity: 1;
+}
+
+.arma-nav__item--logout .arma-nav__link {
+    color: var(--arma-danger);
+}
+
+.arma-nav__item--logout .arma-nav__link svg {
+    color: var(--arma-danger);
+}
+
+.arma-nav__badge {
+    margin-right: auto;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: var(--arma-danger);
+    color: #fff;
+}
+
+/* Main Content Area */
+.arma-content {
+    min-width: 0;
+    overflow-wrap: break-word;
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Section Header */
+.arma-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--arma-border);
+}
+
+.arma-card-header__title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: var(--arma-heading);
+}
+
+.arma-card-header__title svg {
+    width: 18px;
+    height: 18px;
+    color: var(--arma-secondary);
+}
+
+/* Dashboard Bottom Grid (Two columns: Latest Orders, Frequent Orders) */
+.arma-orders-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+/* v1.6.0: admin layout model — full-width stacked cards */
+.arma-orders-grid--stacked {
+    grid-template-columns: 1fr;
+}
+
+/* Order List Items (Cards inside widgets) */
+.arma-order-list {
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.arma-order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    border: 1px solid var(--arma-border);
+    border-radius: var(--arma-radius-md);
+    background: #ffffff;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.arma-order-item:hover {
+    border-color: var(--arma-border-hover);
+    box-shadow: var(--arma-shadow-sm);
+}
+
+.arma-order-item__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.arma-order-item__right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.arma-order-item__thumb {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--arma-radius-sm);
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.arma-order-item__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.arma-order-item__thumb svg {
+    width: 22px;
+    height: 22px;
+    color: #94a3b8;
+}
+
+.arma-order-item__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.arma-order-item__title {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--arma-heading);
+}
+
+.arma-order-item__date {
+    font-size: 0.75rem;
+    color: var(--arma-text-muted);
+    direction: ltr;
+    text-align: right;
+}
+
+.arma-order-item__price {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--arma-heading);
+}
+
+/* Status Badges */
+.arma-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 0.72rem;
+    font-weight: 600;
+}
+
+.arma-badge--pending {
+    background: var(--arma-warning-bg);
+    color: var(--arma-warning);
+}
+
+.arma-badge--replied, .arma-badge--completed {
+    background: var(--arma-success-bg);
+    color: var(--arma-success);
+}
+
+.arma-badge--cancelled, .arma-badge--failed {
+    background: var(--arma-danger-bg);
+    color: var(--arma-danger);
+}
+
+/* Buttons */
+.arma-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 9px 18px;
+    border-radius: var(--arma-radius-sm);
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s;
+    font-family: var(--arma-font);
+    border-radius: var(--arma-radius-btn, var(--arma-radius-sm));
+}
+
+.arma-btn--primary {
+    background: var(--arma-primary);
+    color: var(--arma-btn-text, #ffffff);
+}
+
+.arma-btn--primary:hover {
+    background: var(--arma-primary-hover);
+}
+
+.arma-btn--outline {
+    background: transparent;
+    border: 1px solid var(--arma-border);
+    color: var(--arma-text);
+}
+
+.arma-btn--outline:hover {
+    border-color: var(--arma-primary);
+    color: var(--arma-primary);
+}
+
+.arma-btn--sm {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+}
+
+/* Forms */
+.arma-form-group {
+    margin-bottom: 16px;
+}
+
+.arma-form-label {
+    display: block;
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--arma-heading);
+    margin-bottom: 6px;
+}
+
+.arma-form-control {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--arma-input-border, var(--arma-border));
+    border-radius: var(--arma-radius-md, var(--arma-radius-sm));
+    font-size: 0.9rem;
+    font-family: var(--arma-font);
+    background: var(--arma-input-bg, #ffffff);
+    color: var(--arma-text);
+    transition: border-color 0.2s;
+}
+
+.arma-form-control:focus {
+    outline: none;
+    border-color: var(--arma-primary);
+    box-shadow: 0 0 0 3px var(--arma-primary-light);
+}
+
+/* Empty State */
+.arma-empty {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--arma-text-muted);
+}
+
+.arma-empty svg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+    color: #cbd5e1;
+}
+
+/* Responsive — see the Mobile Responsive Overhaul section below */
+
+/* ═══════════ Thank-You Hero (post-purchase landing) ═══════════ */
+.arma-thanks-hero {
+    text-align: center;
+    padding: 40px 24px 32px;
+    margin-bottom: 20px;
+    background:
+        radial-gradient(120% 140% at 50% -30%, var(--arma-primary-light) 0%, var(--arma-card) 55%);
+}
+.arma-thanks-hero__badge {
+    width: 84px; height: 84px; margin: 0 auto 18px; border-radius: 50%;
+    background: var(--arma-success); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 0 8px color-mix(in srgb, var(--arma-success) 15%, transparent), 0 12px 26px -10px var(--arma-success);
+    animation: armaThanksPop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+.arma-thanks-hero__badge svg { width: 40px; height: 40px; }
+@keyframes armaThanksPop {
+    0%   { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+.arma-thanks-hero__title {
+    font-size: 1.5rem; font-weight: 800; color: var(--arma-heading);
+    margin: 0 0 10px;
+}
+.arma-thanks-hero__subtitle {
+    font-size: 0.92rem; color: var(--arma-text-muted);
+    max-width: 560px; margin: 0 auto 18px; line-height: 1.8;
+}
+.arma-thanks-hero__meta {
+    display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 22px;
+}
+.arma-thanks-hero__chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--arma-card); border: 1px solid var(--arma-border);
+    border-radius: 999px; padding: 7px 16px; font-size: 0.8rem; color: var(--arma-text);
+}
+.arma-thanks-hero__chip strong { color: var(--arma-heading); font-weight: 800; }
+.arma-thanks-hero__cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--arma-primary); color: var(--arma-btn-text, #fff);
+    padding: 12px 30px; border-radius: var(--arma-radius-btn, var(--arma-radius-sm));
+    font-weight: 700; font-size: 0.9rem; text-decoration: none;
+    box-shadow: 0 8px 20px -8px var(--arma-primary);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    animation: armaThanksBounce 1.8s ease-in-out 0.8s infinite;
+}
+.arma-thanks-hero__cta:hover { transform: translateY(-2px); color: var(--arma-btn-text, #fff); }
+.arma-thanks-hero__cta svg { width: 17px; height: 17px; }
+@keyframes armaThanksBounce {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(3px); }
+}
+.arma-thanks-dashboard { margin-top: 24px; }
+
+/* Wheel page cards align exactly like the other panel cards (no extra
+   max-width/centering offsets) and the canvas never overflows. */
+#arma-wheel-section,
+#arma-wheel-used,
+.arma-thanks-hero { width: 100%; }
+#arma-lucky-canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.arma-wheel-wrap { width: 100%; overflow: hidden; }
+
+/* ═══════════ Mobile Responsive Overhaul ═══════════ */
+
+/* Collapsible account menu button (mobile/tablet only) */
+.arma-nav-toggle {
+    display: none;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border: 1px solid var(--arma-border);
+    border-radius: var(--arma-radius-md);
+    background: var(--arma-sidebar-bg, var(--arma-card));
+    color: var(--arma-heading);
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: var(--arma-font);
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+.arma-nav-toggle:hover { border-color: var(--arma-primary); }
+.arma-nav-toggle svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--arma-primary); }
+.arma-nav-toggle__chevron { margin-right: auto; transition: transform 0.25s ease; color: var(--arma-text-muted) !important; }
+.arma-sidebar--nav-open .arma-nav-toggle__chevron { transform: rotate(180deg); }
+
+/* Tablets & phones: compact account card + collapsible vertical menu.
+   NOT sticky — never overlaps/doubles a sticky theme header on mobile. */
+@media (max-width: 991px) {
+    .arma-wrapper { padding: 14px 12px; }
+
+    /* Two-column layouts (address cards, name fields, form rows) stack
+       vertically on phones/tablets — side-by-side breaks there. */
+    .arma-grid-2 { grid-template-columns: 1fr !important; }
+
+    /* align-items:stretch is CRITICAL here — the base rule uses flex-start,
+       which in the stacked (column) layout shrinks .arma-content to its
+       intrinsic width (~400px on orders/tickets). Stretch = full width. */
+    .arma-layout { flex-direction: column; align-items: stretch; gap: 14px; }
+    .arma-content { width: 100%; }
+
+    .arma-sidebar {
+        width: 100%;
+        position: static;          /* never follows scroll, never stacks with theme headers */
+        padding: 10px;
+        gap: 10px;
+        border-radius: var(--arma-radius-lg);
+        box-shadow: var(--arma-shadow-sm);
+    }
+    /* Account header on phones: avatar + (name/phone) + bell in a tidy grid;
+       the meta rows collapse away to keep the compact header clean. */
+    .arma-profile-card {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 2px 12px;
+        padding: 12px 10px;
+        text-align: right;
+    }
+    .arma-profile-card__avatar { width: 46px; height: 46px; margin: 0; grid-column: 1; grid-row: 1 / span 2; }
+    .arma-profile-card__name { font-size: 0.92rem; margin: 0; grid-column: 2; grid-row: 1; }
+    .arma-profile-card__phone { grid-column: 2; grid-row: 2; font-size: 0.72rem; margin-top: 2px; }
+    .arma-profile-card__meta { display: none; }
+    .arma-profile-card__bell {
+        position: static;
+        width: 36px; height: 36px;
+        grid-column: 3;
+        grid-row: 1 / span 2;
+        margin: 0;
+    }
+
+
+    /* The toggle button replaces the always-on menu */
+    .arma-nav-toggle { display: flex; }
+    .arma-nav { display: none; padding: 0; }
+    .arma-sidebar--nav-open .arma-nav { display: block; }
+    .arma-nav__list { display: flex; flex-direction: column; gap: 4px; margin-top: 10px; }
+    .arma-nav__item { margin: 0; }
+    .arma-nav__link {
+        padding: 13px 14px;
+        border-radius: var(--arma-radius-md);
+        font-size: 0.9rem;
+        background: var(--arma-sidebar-hover-bg, #f8fafc);
+    }
+    .arma-nav__link svg { width: 18px; height: 18px; opacity: 1; }
+    .arma-nav__badge { margin-right: 0; }
+
+    .arma-thanks-hero { padding: 30px 16px 24px; }
+    .arma-thanks-hero__title { font-size: 1.25rem; }
+}
+
+/* v1.10.4 (phones): the 3-column profile grid squeezes long names into a
+   narrow middle column (3 wrapped lines at 360px). Stack instead: centered
+   avatar, full-width centered name, phone, floating bell. */
+@media (max-width: 600px) {
+    .arma-profile-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        padding: 14px 10px 12px;
+    }
+    /* avatar size stays at the base 72px — only the layout stacks here */
+    .arma-profile-card__name {
+        font-size: 0.92rem;
+        margin: 0;
+        width: 100%;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+    .arma-profile-card__phone { font-size: 0.75rem; margin-top: 2px; }
+    .arma-profile-card__bell {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 32px;
+        height: 32px;
+        margin: 0;
+    }
+    .arma-profile-card__bell svg { width: 15px; height: 15px; }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    .arma-wrapper { padding: 10px 8px 22px; }
+    .arma-layout { gap: 10px; }
+    .arma-sidebar { padding: 8px; }
+
+    /* Typography scale down */
+    .arma-card-header__title { font-size: 0.98rem !important; }
+    .arma-content h2 { font-size: 1.02rem; }
+    .arma-content h3 { font-size: 0.95rem; }
+
+    /* Inline-styled grids inside forms collapse to a single column */
+    .arma-card form div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+
+    /* Orders */
+    .arma-orders-grid { grid-template-columns: 1fr !important; }
+    .arma-order-item { flex-direction: column; align-items: stretch; gap: 10px; }
+    .arma-order-item__left { width: 100% !important; flex-direction: row !important; justify-content: space-between; }
+
+    /* Buttons: touch-friendly, full width when alone */
+    .arma-btn { min-height: 44px; }
+    .arma-card .arma-empty div[style*="display: flex"] { flex-direction: column; align-items: stretch; }
+    .arma-card .arma-empty .arma-btn { width: 100%; }
+
+    /* Forms */
+    .arma-form-control { font-size: 16px; } /* prevents iOS zoom-on-focus */
+
+    /* Thank-you hero */
+    .arma-thanks-hero { padding: 24px 14px 20px; border-radius: var(--arma-radius-lg); }
+    .arma-thanks-hero__badge { width: 68px; height: 68px; margin-bottom: 14px; }
+    .arma-thanks-hero__badge svg { width: 32px; height: 32px; }
+    .arma-thanks-hero__title { font-size: 1.12rem; }
+    .arma-thanks-hero__subtitle { font-size: 0.84rem; }
+    .arma-thanks-hero__chip { padding: 6px 12px; font-size: 0.74rem; }
+    .arma-thanks-hero__cta { width: 100%; justify-content: center; padding: 13px 20px; animation: none; }
+
+    /* Lucky wheel result card */
+    .arma-wheel-result { padding: 14px !important; }
+    .arma-wheel-result .arma-btn { width: 100%; }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .arma-wrapper { padding: 8px 6px 18px; }
+    .arma-nav__link { padding: 8px 11px; font-size: 0.76rem; }
+    .arma-thanks-hero__title { font-size: 1.02rem; }
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .arma-thanks-hero__badge,
+    .arma-thanks-hero__cta,
+    .arma-wheel-banner--spin { animation: none !important; }
+}
+
+/* ═══════════ Lucky Wheel — redesigned stage ═══════════ */
+.arma-wheel-inner { padding: 28px 20px 32px; text-align: center; }
+.arma-wheel-ordertag {
+    display: inline-block; padding: 4px 14px; border-radius: 20px;
+    background: var(--arma-primary-light); color: var(--arma-primary);
+    font-size: 0.85rem; font-weight: 700; margin-bottom: 12px;
+}
+.arma-wheel-title { font-size: 1.4rem; font-weight: 800; color: var(--arma-heading); margin: 0 0 8px; }
+.arma-wheel-subtitle { color: var(--arma-text-muted); font-size: 0.92rem; margin: 0 auto 28px; max-width: 500px; }
+
+.arma-wheel-stage {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto 28px;
+    aspect-ratio: 1 / 1;
+}
+.arma-wheel-wrap { position: relative; width: 100%; height: 100%; }
+#arma-lucky-canvas { display: block; width: 100%; height: 100%; }
+.arma-wheel-pointer {
+    position: absolute; top: -6px; left: 50%; transform: translateX(-50%);
+    z-index: 10; width: 34px; height: 30px; color: #0f172a;
+    filter: drop-shadow(0 3px 5px rgba(0,0,0,0.3));
+    pointer-events: none;
+}
+.arma-wheel-pointer svg { width: 100%; height: 100%; }
+.arma-sound-btn {
+    position: absolute; bottom: 2px; left: 2px; z-index: 11;
+    width: 38px; height: 38px; border-radius: 50%;
+    border: 1px solid var(--arma-border); background: var(--arma-card);
+    color: var(--arma-text); cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: var(--arma-shadow-sm); transition: all 0.2s;
+}
+.arma-sound-btn:hover { color: var(--arma-primary); border-color: var(--arma-primary); }
+.arma-sound-btn svg { width: 17px; height: 17px; }
+.arma-sound-btn .arma-sound-off { display: none; }
+.arma-sound-btn.is-muted .arma-sound-on { display: none; }
+.arma-sound-btn.is-muted .arma-sound-off { display: block; }
+
+.arma-spin-btn {
+    padding: 13px 38px; font-size: 1.02rem; font-weight: 800; border-radius: 30px;
+    box-shadow: 0 6px 18px -6px var(--arma-primary);
+    display: inline-flex; align-items: center; gap: 9px;
+}
+.arma-spin-btn:hover { transform: translateY(-1px); }
+
+/* Result card */
+.arma-wheel-result {
+    display: none; margin-top: 28px; padding: 24px 20px;
+    border-radius: var(--arma-radius-md); border: 1px solid var(--arma-border);
+    background: var(--arma-card); text-align: center;
+}
+.arma-wheel-result--win  { border-color: var(--arma-success); background: var(--arma-success-bg, #ecfdf5); }
+.arma-wheel-result--lose { border-color: var(--arma-border); }
+.arma-wheel-result__icon {
+    width: 58px; height: 58px; margin: 0 auto 12px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--arma-card); border: 1px solid var(--arma-border);
+    color: var(--arma-primary);
+}
+.arma-wheel-result--win .arma-wheel-result__icon { color: var(--arma-success); }
+.arma-wheel-result__icon svg { width: 28px; height: 28px; }
+.arma-wheel-result__title { margin: 0 0 8px; font-size: 1.15rem; color: var(--arma-heading); }
+.arma-wheel-result__desc { color: var(--arma-text-muted); font-size: 0.9rem; margin-bottom: 16px; }
+
+.arma-wheel-coupon { margin-bottom: 18px; }
+.arma-wheel-coupon__label { display: block; font-size: 0.82rem; color: var(--arma-text-muted); margin-bottom: 8px; }
+.arma-wheel-coupon__row {
+    display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center;
+    background: var(--arma-card); padding: 10px 18px;
+    border: 2px dashed var(--arma-primary); border-radius: var(--arma-radius-md);
+}
+.arma-wheel-coupon__code {
+    font-size: 1.15rem; color: var(--arma-primary); letter-spacing: 2px;
+    direction: ltr; font-weight: 800;
+}
+.arma-wheel-coupon__hint { font-size: 0.74rem; color: var(--arma-text-muted); margin: 8px 0 0; }
+
+/* Confetti */
+.arma-confetti {
+    position: absolute; top: -12px; width: 8px; height: 14px; z-index: 20;
+    border-radius: 2px; pointer-events: none;
+    animation-name: armaConfettiFall; animation-timing-function: linear; animation-fill-mode: forwards;
+}
+@keyframes armaConfettiFall {
+    0%   { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(420px) rotate(720deg); opacity: 0; }
+}
+
+@media (max-width: 600px) {
+    .arma-wheel-inner { padding: 22px 12px 26px; }
+    .arma-wheel-title { font-size: 1.15rem; }
+    .arma-wheel-subtitle { font-size: 0.84rem; }
+    .arma-wheel-coupon__row { padding: 8px 12px; }
+    .arma-spin-btn { width: 100%; justify-content: center; }
+}
+
+/* Winner pointer — bigger, gold, unmistakable */
+.arma-wheel-pointer {
+    width: 40px; height: 38px; top: -16px; color: #fbbf24;
+    filter: drop-shadow(0 3px 6px rgba(0,0,0,0.45));
+}
+.arma-wheel-pointer::after {
+    content: ''; position: absolute; inset: 0;
+    border-radius: inherit;
+}
+.arma-wheel--decided .arma-wheel-wrap { animation: armaWheelPulse 0.7s ease 2; }
+@keyframes armaWheelPulse {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.03); }
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   v1.7.0 — Design refresh: hero, stats, quick actions, personalization
+   (All new components kept RTL-first and fully responsive)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Focus visibility for keyboard users ── */
+.arma-panel-body a:focus-visible,
+.arma-wrapper a:focus-visible,
+.arma-wrapper button:focus-visible,
+.arma-form-control:focus-visible {
+    outline: 2px solid var(--arma-primary);
+    outline-offset: 2px;
+}
+
+/* ── Card hover lift ── */
+.arma-card--hover {
+    transition: box-shadow 0.22s ease, transform 0.22s ease, border-color 0.22s ease;
+}
+.arma-card--hover:hover {
+    box-shadow: var(--arma-shadow-lg);
+    transform: translateY(-2px);
+}
+
+
+/* ── Stats overview tiles ── */
+.arma-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 20px;
+}
+/* v1.6.0 admin-selectable column count */
+.arma-stats--c2 { grid-template-columns: repeat(2, 1fr); }
+.arma-stats--c3 { grid-template-columns: repeat(3, 1fr); }
+.arma-stats--c4 { grid-template-columns: repeat(4, 1fr); }
+.arma-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 18px;
+    background: var(--arma-card);
+    border: 1px solid var(--arma-border);
+    border-radius: var(--arma-radius-lg);
+    box-shadow: var(--arma-shadow-sm);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.arma-stat:hover { box-shadow: var(--arma-shadow-md); transform: translateY(-1px); }
+.arma-stat__icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+.arma-stat__icon svg { width: 21px; height: 21px; }
+.arma-stat__icon--primary,
+.arma-stat__icon--warning,
+.arma-stat__icon--info,
+.arma-stat__icon--danger {
+    background: var(--arma-primary-light);
+    color: var(--arma-primary);
+}
+.arma-stat__value { font-size: 1.35rem; font-weight: 800; color: var(--arma-heading); line-height: 1.2; }
+.arma-stat__label { font-size: 0.78rem; color: var(--arma-text-muted); font-weight: 600; }
+
+/* ── Quick actions ── */
+.arma-quick {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 22px;
+}
+.arma-quick__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px 18px;
+    background: var(--arma-card);
+    border: 1px solid var(--arma-border);
+    border-radius: var(--arma-radius-lg);
+    text-decoration: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.arma-quick__item:hover {
+    border-color: var(--arma-primary);
+    box-shadow: var(--arma-shadow-md);
+    transform: translateY(-2px);
+}
+.arma-quick__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--arma-primary-light);
+    color: var(--arma-primary);
+    margin-bottom: 6px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.arma-quick__item:hover .arma-quick__icon {
+    background: var(--arma-primary);
+    color: var(--arma-btn-text, #fff);
+}
+.arma-quick__icon svg { width: 20px; height: 20px; }
+.arma-quick__title { font-size: 0.88rem; font-weight: 800; color: var(--arma-heading); }
+.arma-quick__desc  { font-size: 0.75rem; color: var(--arma-text-muted); }
+
+/* ── Empty-state refinements (shared classes) ── */
+.arma-empty-state__art {
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+}
+.arma-empty-state__title { margin: 0 0 6px; font-size: 0.95rem; font-weight: 700; color: var(--arma-heading); }
+.arma-empty-state__text  { color: var(--arma-text-muted); font-size: 0.82rem; margin: 0 0 16px; }
+.arma-empty-state__text:last-child { margin-bottom: 0; }
+
+/* ── Sidebar profile card (clean & neutral) ── */
+.arma-profile-card {
+    position: relative;
+    overflow: hidden;
+}
+.arma-profile-card__avatar {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arma-profile-card__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--arma-border-hover, var(--arma-border));
+    background: var(--arma-card);
+}
+.arma-profile-card__name { font-size: 1rem; font-weight: 800; }
+.arma-profile-card__user-id {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 6px;
+    padding: 3px 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--arma-text-muted);
+    background: var(--arma-background);
+    border: 1px solid var(--arma-border);
+    border-radius: 999px;
+}
+
+/* ── Nav active indicator (RTL: bar on the right edge) ── */
+.arma-nav__link { position: relative; }
+.arma-nav__item--active .arma-nav__link::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 24px;
+    border-radius: 4px 0 0 4px;
+    background: var(--arma-primary);
+}
+
+/* ── Account personalization ── */
+.arma-account-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+.arma-account-side {
+    padding: 28px 22px;
+    text-align: center;
+}
+.arma-account-side__avatar {
+    position: relative;
+    width: 92px;
+    height: 92px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    background: var(--arma-card);
+}
+.arma-account-side__avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--arma-border-hover, var(--arma-border));
+    background: var(--arma-background);
+}
+.arma-account-side__name { margin: 0 0 4px; font-size: 1.05rem; font-weight: 800; color: var(--arma-heading); position: relative; }
+.arma-account-side__phone {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--arma-text-muted);
+    letter-spacing: 0.4px;
+    position: relative;
+}
+.arma-account-side__status {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 14px;
+    padding: 7px 14px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: var(--arma-success);
+    background: var(--arma-success-bg, #ecfdf5);
+    border-radius: 999px;
+}
+.arma-account-side__status svg { width: 15px; height: 15px; }
+.arma-account-side__meta {
+    list-style: none;
+    margin: 18px 0 0;
+    padding: 16px 0 0;
+    border-top: 1px dashed var(--arma-border);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: right;
+}
+.arma-account-side__meta li { display: flex; align-items: center; gap: 9px; font-size: 0.8rem; color: var(--arma-text-muted); }
+.arma-account-side__meta svg { width: 16px; height: 16px; color: var(--arma-primary); flex-shrink: 0; }
+.arma-account-side__meta strong { margin-inline-start: auto; color: var(--arma-heading); font-size: 0.8rem; }
+
+.arma-account-main { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
+
+.arma-notice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 16px;
+    border-radius: var(--arma-radius-md);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.arma-notice svg { width: 19px; height: 19px; flex-shrink: 0; }
+.arma-notice--success { background: var(--arma-success-bg, #ecfdf5); color: var(--arma-success); border: 1px solid rgba(16, 185, 129, 0.25); }
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+    .arma-stats { grid-template-columns: repeat(2, 1fr); }
+    .arma-quick { grid-template-columns: repeat(2, 1fr); }
+    .arma-account-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+    .arma-stats { gap: 10px; }
+    .arma-stat { padding: 14px; }
+    .arma-stat__value { font-size: 1.15rem; }
+    .arma-quick { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .arma-quick__item { padding: 13px 14px; }
+    .arma-quick__desc { display: none; }
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   v1.8.0 — Design language refresh (light, airy, screenshot-inspired)
+   Light surfaces · hairline borders · one bold brand card · tinted pills
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Surfaces ── */
+.arma-wrapper { padding: 26px 18px 34px; }
+
+/* ── Sidebar ── */
+.arma-sidebar { gap: 14px; }
+.arma-profile-card { padding: 20px 16px 16px; }
+.arma-nav { padding: 10px; }
+.arma-nav__link {
+    padding: 11px 13px;
+    border-radius: 12px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #475569;
+}
+.arma-nav__link svg { width: 19px; height: 19px; opacity: 0.85; }
+.arma-nav__link:hover { background: #f6f7f9; color: var(--arma-heading); }
+.arma-nav__item--active .arma-nav__link {
+    font-weight: 700;
+    box-shadow: none;
+}
+.arma-nav__item--active .arma-nav__link::before { display: none; } /* cleaner pill, no bar */
+.arma-nav__badge {
+    background: var(--arma-primary);
+    color: #fff;
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+}
+.arma-nav__item--logout .arma-nav__link { color: #b91c1c; }
+.arma-nav__item--logout .arma-nav__link:hover { background: #fef2f2; }
+
+/* ── Stats & quick actions: lighter, hairline ── */
+.arma-stat, .arma-quick__item {
+    border: 1px solid #edf0f4;
+    border-radius: 14px;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.03);
+}
+.arma-stat { padding: 16px 18px; }
+.arma-stat__value { font-size: 1.4rem; letter-spacing: -0.02em; }
+.arma-stat__label, .arma-quick__desc { font-size: 0.76rem; color: #64748b; }
+.arma-quick__icon { border-radius: 11px; }
+
+/* ── Forms: filled-soft inputs (focus lifts to white + brand ring) ── */
+.arma-form-control {
+    background: var(--arma-background);
+    border-color: transparent;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+    padding: 12px 14px;
+    transition: background 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+.arma-form-control:hover { background: #f1f4f8; }
+.arma-form-control:focus {
+    background: var(--arma-card);
+    border-color: var(--arma-primary);
+    box-shadow: 0 0 0 3px var(--arma-primary-light);
+    outline: none;
+}
+
+/* ── Buttons ── */
+.arma-btn--primary {
+    box-shadow: 0 6px 16px -8px var(--arma-primary);
+    transition: transform 0.16s ease, box-shadow 0.16s ease, filter 0.16s ease;
+}
+.arma-btn--primary:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.04);
+    box-shadow: 0 10px 20px -8px var(--arma-primary);
+}
+.arma-btn--outline { border-radius: 999px; }
+
+/* ── Card headers / titles ── */
+.arma-card-header__title {
+    font-size: 0.98rem;
+    font-weight: 800;
+    color: var(--arma-heading);
+    letter-spacing: -0.01em;
+}
+.arma-card-header__title svg { color: var(--arma-primary); }
+
+/* ── Badges: soft pills ── */
+.arma-badge { border-radius: 999px; font-weight: 700; }
+
+/* ── Order list rows ── */
+.arma-order-item { border-radius: 12px; transition: background 0.15s ease, transform 0.15s ease; }
+.arma-order-item:hover { background: #f8f9fb; }
+
+/* ── Account summary card ── */
+.arma-account-side { border-radius: var(--arma-radius-lg); }
+.arma-account-side__status { border-radius: 999px; }
+
+/* ── Empty states ── */
+.arma-empty-state__art { border-radius: 22px; }
+
+/* ── Responsive tweak ── */
+@media (max-width: 600px) {
+    .arma-stat, .arma-quick__item { border-radius: 12px; }
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   v1.9.0 — Design system layer (light SaaS card language)
+   Soft canvas #f4f5f8 · white cards, very rounded, diffuse shadows ·
+   full-pill nav · warm welcome card · dot bullets · status pills
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── Canvas & cards ── */
+.arma-panel-body, .arma-wrapper { background: var(--arma-background, #f4f5f8); }
+.arma-card--hover:hover { box-shadow: 0 6px 20px rgba(16, 24, 40, 0.07); border-color: #e6e9f0; }
+.arma-wrapper { padding: 24px 18px 36px; }
+
+/* ── Reusable status pill (light bg + dark same-hue text) ── */
+.arma-status-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.74rem;
+    font-weight: 700;
+    line-height: 1.6;
+    white-space: nowrap;
+}
+.arma-badge { border-radius: 999px; }
+
+/* ── Colored dot bullets (profile & welcome rows) ── */
+.arma-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+.arma-dot--primary { background: var(--arma-primary); }
+.arma-dot--success { background: var(--arma-success); }
+.arma-dot--warning { background: var(--arma-warning); }
+.arma-dot--info    { background: #3b82f6; }
+.arma-dot--danger  { background: var(--arma-danger); }
+
+/* ── Sidebar nav: full pill active state ── */
+.arma-nav { padding: 8px; }
+.arma-nav__link {
+    border-radius: 999px;
+    padding: 11px 15px;
+    color: #8a90a3;
+    font-weight: 600;
+}
+.arma-nav__link svg { width: 19px; height: 19px; }
+.arma-nav__link:hover { background: #f4f5f8; color: var(--arma-heading); }
+.arma-nav__item--active .arma-nav__link { border-radius: 999px; }
+
+/* ── Sidebar profile card (pattern ا) ── */
+.arma-profile-card { padding: 22px 16px 16px; }
+.arma-profile-card__avatar { width: 68px; height: 68px; }
+.arma-profile-card__phone {
+    display: block;
+    margin-top: 3px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #8a90a3;
+    letter-spacing: 0.3px;
+}
+.arma-profile-card__meta {
+    list-style: none;
+    margin: 16px 0 0;
+    padding: 14px 0 0;
+    border-top: 1px dashed var(--arma-border);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+}
+.arma-profile-card__meta li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    color: #8a90a3;
+}
+.arma-profile-card__meta .arma-dot { width: 7px; height: 7px; }
+.arma-profile-card__meta strong { margin-inline-start: auto; color: var(--arma-heading); font-size: 0.78rem; }
+
+/* ── Welcome card (warm surface, pattern ج) ── */
+.arma-welcome {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 24px 26px;
+    margin-bottom: 18px;
+    border-radius: 18px;
+    background: var(--arma-welcome-bg, #f1ece2);
+    border: 1px solid rgba(31, 36, 48, 0.05);
+}
+.arma-welcome__hello { flex: 1 1 240px; min-width: 220px; }
+.arma-welcome__title {
+    margin: 0 0 6px;
+    font-size: 1.12rem;
+    font-weight: 800;
+    color: var(--arma-heading);
+    letter-spacing: -0.01em;
+}
+.arma-welcome__sub { margin: 0; font-size: 0.8rem; color: #8a90a3; line-height: 1.9; }
+.arma-welcome__statuses {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.arma-welcome__stat {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.8rem;
+    color: #6b7183;
+}
+.arma-welcome__stat strong { color: var(--arma-heading); font-size: 0.92rem; font-weight: 800; }
+.arma-welcome__stat em { font-style: normal; color: #8a90a3; }
+.arma-welcome__sep { color: #c6cad6; }
+.arma-welcome__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: var(--arma-heading);
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+.arma-welcome__cta svg { width: 16px; height: 16px; }
+.arma-welcome__cta:hover { transform: translateY(-1px); box-shadow: 0 8px 18px -8px rgba(15, 23, 42, 0.5); color: #fff; }
+
+/* ── Stat cards with sparklines (pattern د) ── */
+.arma-stats { gap: 16px; margin-bottom: 18px; }
+.arma-stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 18px 18px 12px;
+    border-radius: 16px;
+    border: 1px solid #eef0f4;
+    background: var(--arma-card);
+    box-shadow: 0 2px 12px rgba(16, 24, 40, 0.04);
+}
+.arma-stat__value { font-size: 1.5rem; font-weight: 800; color: var(--arma-heading); line-height: 1.2; }
+.arma-stat__label { font-size: 0.76rem; color: #8a90a3; font-weight: 600; margin-top: 3px; }
+.arma-spark { width: 100%; height: 26px; display: block; }
+.arma-spark polyline {
+    fill: none;
+    stroke: var(--arma-primary);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0.35;
+}
+
+/* ── Quick actions ── */
+.arma-quick { gap: 16px; margin-bottom: 20px; }
+.arma-quick__item { border-radius: 16px; padding: 16px; }
+
+/* ── Order rows (pattern ه) ── */
+.arma-order-item {
+    padding: 12px 12px;
+    margin: 6px 0;
+    border-radius: 14px;
+}
+.arma-order-item:hover { background: #f7f8fa; }
+.arma-order-item__thumb { border-radius: 12px; overflow: hidden; }
+.arma-order-item__title { font-weight: 700; color: var(--arma-heading); }
+.arma-order-item__date { color: #8a90a3; }
+
+/* ── Simple empty states (pattern و) ── */
+.arma-empty-state {
+    background: #f8f9fb;
+    border-radius: 14px;
+    padding: 34px 20px;
+    text-align: center;
+}
+.arma-empty-state__text { color: #8a90a3; font-size: 0.84rem; margin: 0 0 14px; }
+.arma-empty-state__text:last-child { margin-bottom: 0; }
+
+/* ── Muted text tone shift ── */
+.arma-card-header__title { font-size: 0.95rem; }
+
+@media (max-width: 600px) {
+    .arma-welcome { padding: 18px; }
+    .arma-welcome__title { font-size: 1rem; }
+    .arma-welcome__statuses { gap: 9px; }
+    .arma-welcome__stat em { display: none; }  /* numbers + dots stay, labels hidden on tiny screens */
+    .arma-welcome__sep { display: none; }      /* separators meaningless without labels */
+    .arma-welcome__cta { width: 100%; justify-content: center; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   v1.7.0 — Mobile-first layout management (admin-controlled phone view)
+   ═══════════════════════════════════════════════════════════ */
+@media (max-width: 991px) {
+    /* Menu model «همیشه باز»: no accordion button — the nav list is
+       rendered open at all times. */
+    .arma-sidebar--menu-open .arma-nav-toggle { display: none; }
+    .arma-sidebar--menu-open .arma-nav { display: block; }
+
+    /* Profile card model «حداقلی»: name + bell only — the default
+       account icon (avatar) is removed. («hidden» skips the markup.) */
+    .arma-profile-card--minimal {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 12px;
+    }
+    .arma-profile-card--minimal .arma-profile-card__avatar,
+    .arma-profile-card--minimal .arma-profile-card__phone,
+    .arma-profile-card--minimal .arma-profile-card__meta { display: none; }
+    .arma-profile-card--minimal .arma-profile-card__name { grid-area: auto; margin: 0; font-size: 0.92rem; flex: 1; }
+    .arma-profile-card--minimal .arma-profile-card__bell { position: static; grid-area: auto; width: 36px; height: 36px; margin: 0; }
+
+    /* Admin-selected phone column counts (override responsive defaults) */
+    .arma-stats--mc1 { grid-template-columns: 1fr; }
+    .arma-stats--mc2 { grid-template-columns: repeat(2, 1fr); }
+    .arma-quick--mc1 { grid-template-columns: 1fr; }
+    .arma-quick--mc2 { grid-template-columns: repeat(2, 1fr); }
+    .arma-quick--show-desc .arma-quick__desc { display: block; }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   v1.10.0 — Wishlist (favorites) page
+   ───────────────────────────────────────────────────────────────── */
+.arma-wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+.arma-wishlist-grid--c2 { grid-template-columns: repeat(2, 1fr); }
+.arma-wishlist-grid--c3 { grid-template-columns: repeat(3, 1fr); }
+.arma-wishlist-grid--c4 { grid-template-columns: repeat(4, 1fr); }
+
+.arma-wishlist-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px;
+    background: var(--arma-card);
+    border: 1px solid #edf0f4;
+    border-radius: var(--arma-radius-lg);
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+    transition: border-color 0.16s ease, box-shadow 0.16s ease;
+}
+.arma-wishlist-card:hover {
+    border-color: #e3e8ef;
+    box-shadow: 0 6px 20px rgba(16, 24, 40, 0.07);
+}
+/* v1.10.4: solid danger badge + white × — high contrast on ANY background
+   (the old white pill with a faint gray border was practically invisible
+   on light product images / placeholder thumbs) */
+.arma-wishlist-card__remove {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: var(--arma-danger, #ef4444);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 14px -2px rgba(239, 68, 68, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    transition: transform 0.16s ease, background 0.16s ease, box-shadow 0.16s ease;
+    z-index: 2;
+}
+.arma-wishlist-card__remove svg { width: 15px; height: 15px; stroke-width: 2.6; }
+.arma-wishlist-card__remove:hover {
+    background: #dc2626;
+    transform: scale(1.08);
+}
+.arma-wishlist-card__remove:active { transform: scale(0.94); }
+.arma-wishlist-card__remove:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.arma-wishlist-card__link {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+.arma-wishlist-card__thumb {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: calc(var(--arma-radius-lg) - 6px);
+    background: #f8f9fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.arma-wishlist-card__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.arma-wishlist-card__thumb svg { width: 44px; height: 44px; color: #cbd5e1; }
+.arma-wishlist-card__title {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--arma-heading);
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.arma-wishlist-card__price {
+    font-size: 0.82rem;
+    font-weight: 800;
+    color: var(--arma-primary);
+}
+.arma-wishlist-card__price del { color: #94a3b8; font-weight: 400; }
+.arma-wishlist-card__cart { margin-top: auto; justify-content: center; }
+
+@media (max-width: 1024px) {
+    .arma-wishlist-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 600px) {
+    .arma-wishlist-grid { gap: 10px; }
+    .arma-wishlist-card { padding: 10px; }
+    .arma-wishlist-card__title { font-size: 0.82rem; }
+}

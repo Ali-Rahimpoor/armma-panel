@@ -1,0 +1,2369 @@
+# Arma Panel (آرما پنل) translation template.
+# Copyright (C) 2026 Ali Rahimpoor
+# This file is distributed under the GPL-2.0-or-later license.
+msgid ""
+msgstr ""
+"Project-Id-Version: Arma Panel 1.0.0\n"
+"Report-Msgid-Bugs-To: https://alirahimpoor.ir\n"
+"POT-Creation-Date: 2026-11-01 20:20+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: arma-panel\n"
+
+#: src/Admin/AdminMenu.php
+msgid "آرما پنل"
+msgstr ""
+
+#: src/Admin/AdminMenu.php
+msgid "تنظیمات آرما پنل"
+msgstr ""
+
+#: src/Admin/AdminMenu.php src/Admin/Views/settings.php
+msgid "تنظیمات"
+msgstr ""
+
+#: src/Admin/AdminMenu.php
+msgid "مدیریت تیکت‌ها"
+msgstr ""
+
+#: src/Admin/AdminMenu.php
+msgid "تیکت‌ها"
+msgstr ""
+
+#: src/Admin/AdminMenu.php src/Modules/CustomerPanel/NavigationManager.php
+msgid "اطلاعیه‌ها"
+msgstr ""
+
+#: src/Admin/AdminMenu.php
+msgid "ابزارها و پاک‌سازی پایگاه داده"
+msgstr ""
+
+#: src/Admin/AdminMenu.php
+msgid "ابزارها"
+msgstr ""
+
+#: src/Admin/AdminMenu.php
+msgid "نمایش نده"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+#: src/Admin/Controllers/AdminTicketController.php
+#: src/Admin/Controllers/CleanupController.php
+msgid "شما دسترسی لازم برای این بخش را ندارید."
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid ""
+"کاربر مورد نظر یافت نشد؛ اطلاعیه ارسال نشد. لطفاً شناسه کاربری\n"
+"معتبر وارد کنید."
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "اطلاعیه با موفقیت ارسال شد."
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "ارسال و مدیریت اطلاعیه‌ها"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "ارسال اطلاعیه جدید"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "عنوان اطلاعیه"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "متن اطلاعیه"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "گیرنده اطلاعیه"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "همه مشتریان و کاربران (همگانی)"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "کاربر خاص (با شناسه کاربر)"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "شناسه کاربری"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "ارسال اطلاعیه"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "تاریخچه اطلاعیه‌ها"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "شناسه"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+#: src/Admin/Views/settings.php
+msgid "عنوان"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "گیرنده"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "نوع"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "تاریخ ثبت"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "همگانی (همه کاربران)"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "کاربر #%d"
+msgstr ""
+
+#: src/Admin/Controllers/AdminNotificationController.php
+msgid "هیچ اطلاعیه‌ای یافت نشد."
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "پاسخ با موفقیت برای مشتری ارسال شد."
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "مدیریت تیکت‌های پشتیبانی"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "همه (%d)"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "در انتظار بررسی (%d)"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "پاسخ داده شده (%d)"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "موضوع تیکت"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "مشتری (کاربر)"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "وضعیت"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "آخرین بروزرسانی"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "عملیات"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "در حال بررسی"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "پاسخ داده شده"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "مشاهده و پاسخ"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "هیچ تیکتی یافت نشد."
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+#: src/Modules/Tickets/TicketService.php
+msgid "تیکت یافت نشد."
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "بازگشت به لیست تیکت‌ها"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "تیکت #%d: %s"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "ارسال شده توسط: %s | وضعیت: %s"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "پاسخ مدیر"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "ارسال پاسخ به این تیکت"
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "متن پاسخ مدیر..."
+msgstr ""
+
+#: src/Admin/Controllers/AdminTicketController.php
+msgid "ارسال پاسخ"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "تعداد %d کد تایید منقضی‌شده با موفقیت پاک‌سازی شد."
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "تعداد %d کد تایید مصرف‌شده با موفقیت پاک‌سازی شد."
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "تعداد %d اطلاعیه قدیمی (بیش از ۳۰ روز) پاک‌سازی شد."
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "تعداد %d پیام تیکت بدون والد (Orphan) با موفقیت پاک‌سازی شد."
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "تعداد %d داده موقت منقضی‌شده آرما پنل پاک‌سازی شد."
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "ابزارها و پاک‌سازی پایگاه داده (Arma Cleanup)"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid ""
+"این ابزار به شما کمک می‌کند تا رکوردهای منقضی‌شده، مصرف‌شده و\n"
+"بی‌استفاده افزونه آرما پنل را بدون آسیب به اطلاعات اصلی وردپرس و\n"
+"ووکامرس پاک‌سازی کنید."
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "کدهای تایید (OTP) منقضی‌شده"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "تعداد رکوردهای منقضی در پایگاه داده: %s"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "آیا از پاک‌سازی رکوردهای منقضی‌شده اطمینان دارید؟"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "تعداد در هر مرحله (Batch):"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "پاک‌سازی کدهای منقضی"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "کدهای تایید (OTP) مصرف‌شده"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "تعداد رکوردهای مصرف‌شده در پایگاه داده: %s"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "آیا از پاک‌سازی رکوردهای مصرف‌شده اطمینان دارید؟"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "پاک‌سازی کدهای مصرف‌شده"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "اطلاعیه‌های قدیمی (بیش از ۳۰ روز)"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "تعداد اطلاعیه‌های قدیمی‌تر از ۳۰ روز: %s"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "آیا از پاک‌سازی اطلاعیه‌های قدیمی اطمینان دارید؟"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "پاک‌سازی اطلاعیه‌های قدیمی"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "پیام‌های تیکت بدون والد (Orphan Messages)"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "تعداد پیام‌های تیکت که تیکت اصلی آن‌ها در سیستم حذف شده است: %s"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "آیا از پاک‌سازی پیام‌های بدون والد اطمینان دارید؟"
+msgstr ""
+
+#: src/Admin/Controllers/CleanupController.php
+msgid "پاک‌سازی پیام‌های یتیم"
+msgstr ""
+
+#: src/Admin/Controllers/SettingsController.php
+msgid "شما دسترسی لازم برای این صفحه را ندارید."
+msgstr ""
+
+#: src/Admin/Controllers/SettingsController.php
+msgid "پیامک تست با موفقیت ارسال شد."
+msgstr ""
+
+#: src/Admin/Controllers/SettingsController.php
+msgid "خطا در ارسال پیامک تست"
+msgstr ""
+
+#: src/Admin/Controllers/SettingsController.php
+msgid "لطفاً شماره موبایل برای تست را وارد کنید."
+msgstr ""
+
+#: src/Admin/Controllers/SettingsController.php
+msgid ""
+"خطا: مجموع درصد شانس‌های گردونه %s٪ است و از ۱۰۰ بیشتر می‌شود!\n"
+"بخش‌های گردونه ذخیره نشد؛ درصد‌ها را طوری مرتب کنید که حداکثر ۱۰۰\n"
+"شوند."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "تنظیمات عمومی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ظاهر و رنگ‌بندی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "چیدمان داشبورد"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+#: src/Modules/CustomerPanel/NavigationManager.php
+msgid "علاقه‌مندی‌ها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ورود و ثبت‌نام (OTP)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "سامانه پیامک"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "پیامک‌های ووکامرس"
+msgstr ""
+
+#: src/Admin/Views/settings.php src/Modules/CustomerPanel/PanelRouter.php
+msgid "گردونه شانس"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "مدیریت بخش‌ها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "تنظیمات با موفقیت ذخیره شد."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "بخش‌های تنظیمات"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "نامک آدرس پنل (Slug)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "مسیر دسترسی اختصاصی کاربران به داشبورد"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "آدرس پنل: %s"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "عنوان پنل"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "عنوان صفحه حساب کاربری در مرورگر و منوها (پیش‌فرض: حساب کاربری من)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "الزام ورود پیش از خرید (سبد خرید و پرداخت)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"وقتی فعال باشد، مهمان‌ها پیش از تکمیل خرید به صفحه ورود پیامکی\n"
+"هدایت می‌شوند؛ سبد خریدشان بعد از ورود حفظ و به همان صفحه\n"
+"بازگردانده می‌شوند. وقتی غیرفعال باشد، خرید مهمان آزاد است."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"مشتری باید قبل از خرید وارد حساب کاربری شود (حفظ سبد خرید + بازگشت\n"
+"به همان صفحه)."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "حذف کامل داده‌ها هنگام حذف افزونه"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"هشدار: با فعال کردن این گزینه، وقتی افزونه را از وردپرس حذف کنید،\n"
+"تمام داده‌های آرما پنل برای همیشه پاک می‌شود: جدول‌های پایگاه داده\n"
+"(کدهای یکبار مصرف، تیکت‌ها، اطلاعیه‌ها)، تنظیمات، شماره موبایل و\n"
+"اطلاعات پروفایل کاربران و متاهای سفارش‌ها. اگر این گزینه خاموش\n"
+"باشد (پیش‌فرض)، هنگام حذف افزونه فقط داده‌های موقت و زمان‌بندی‌های\n"
+"خودکار پاک می‌شوند و هیچ داده‌ای از دست نمی‌رود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"بله، هنگام حذف افزونه همه داده‌های آرما پنل (تنظیمات، تیکت‌ها،\n"
+"اطلاعیه‌ها و متاهای کاربر/سفارش) کامل حذف شود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فونت داشبورد کاربری"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"وزیرمتن و شبنم به‌صورت داخلی در افزونه قرار دارند؛ ایران‌یکان و\n"
+"یکان‌بخ تجاری هستند و باید در پوسته موجود باشند یا از طریق فونت\n"
+"سفارشی بارگذاری شوند."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ارث‌بری از پوسته فعال سایت (Theme Font)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "وزیرمتن (Vazirmatn) — همراه افزونه"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "شبنم (Shabnam) — همراه افزونه"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ایران‌یکان (IRANYekan)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "یکان‌بخ (YekanBakh)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فونت سفارشی دلخواه (Custom Font)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "پیش‌نمایش فونت: حساب کاربری من — ۱۲۳۴۵۶۷۸۹۰"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "نام فونت سفارشی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فایل فونت (Woff2/Woff/Ttf)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"آدرس فایل را وارد کنید، از کتابخانه رسانه وردپرس انتخاب کنید یا\n"
+"فایل فونت را مستقیماً بارگذاری نمایید."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "انتخاب / بارگذاری فایل فونت از کتابخانه رسانه"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فونت وزیر لوکال برای صفحه ورود/ثبت‌نام"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"فونت «وزیرمتن» به‌صورت لوکال داخل خود افزونه بسته‌بندی شده است؛ با\n"
+"فعال بودن این گزینه، تمام متن‌ها و فیلدهای صفحه ورود پیامکی (شماره\n"
+"موبایل و کد تایید) با این فونت نمایش داده می‌شوند. فونت فقط در\n"
+"همین صفحه و تنها در صورت فعال بودن بارگذاری می‌شود (یک فایل بهینه\n"
+"woff2) تا سرعت سایت حفظ شود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "بارگذاری فونت وزیر لوکال در صفحه ورود/ثبت‌نام."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "لوگوی صفحه ورود و ثبت‌نام"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "صرفاً در صفحه فرم ورود پیامکی نمایش داده می‌شود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "انتخاب تصویر لوگو"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "حذف"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "رنگ‌های سراسری"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"رنگ اصلی، متن‌ها و پس‌زمینه کل حساب کاربری مشتری — لینک‌ها و آیتم\n"
+"فعال منو به‌صورت خودکار از «رنگ اصلی» پیروی می‌کنند"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "رنگ اصلی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "رنگ دوم (آیکون‌ها)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "پس‌زمینه صفحه"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "کارت خوش‌آمدگویی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "متن اصلی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "عنوان‌ها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "نوار کناری (سایدبار)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "رنگ‌بندی کامل منوی کناری حساب کاربری مشتری"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "پس‌زمینه سایدبار"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "متن آیتم‌های منو"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "هاور آیتم‌ها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "حاشیه سایدبار"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "کارت‌ها و فیلدهای فرم"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ظاهر کارت‌ها، کادرهای ورودی و دکمه‌ها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "پس‌زمینه کارت‌ها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "حاشیه کارت‌ها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "پس‌زمینه فیلدها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "حاشیه فیلدها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "متن دکمه اصلی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "رنگ‌های وضعیت"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "وضعیت سفارش‌ها، اعلان‌ها و هشدارها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "موفقیت"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "هشدار"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "خطا / لغو"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "گردی گوشه‌ها (Radius)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "میزان گردی گوشه کارت‌ها، فیلدها و دکمه‌ها بر حسب پیکسل"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "کارت‌ها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فیلدهای فرم"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "دکمه‌ها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "بازگردانی همه رنگ‌ها به حالت پیش‌فرض"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "شناسه پترن ورود و ثبت‌نام"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"شناسه الگوی پیامک تایید شده در پنل پیامک حاوی متغیر کد OTP. فرمت\n"
+"آن به سرویس‌دهنده بستگی دارد: ملی پیامک / SMS.ir = کد عددی (مثال:\n"
+"406323) — کاوه‌نگار = نام قالب (مثال: LoginOtp) — فراز اس‌ام‌اس =\n"
+"کد پترن (مثال: SJ3FgPrE0C) — آی‌پی‌پنل = کد پترن (مثال:\n"
+"zcxxc465465zxc)."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "سایت پشت پروکسی مورد اعتماد است"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"اگر سایت شما پشت CDN یا پروکسی معکوس (مثل کلودفلر) قرار دارد، IP\n"
+"واقعی کاربران فقط از طریق هدرهایی مثل X-Forwarded-For یا\n"
+"CF-Connecting-IP در دسترس است. با فعال کردن این گزینه، محدودیت‌های\n"
+"IP افزونه به‌جای IP سرور پروکسی، از همان IP واقعی کاربر استفاده\n"
+"می‌کنند. هشدار: این هدرها در درخواست مستقیم قابل جعل هستند؛ این\n"
+"گزینه را فقط زمانی فعال کنید که مطمئنید پروکسی/CDN شما این هدرها\n"
+"را برای همه درخواست‌ها بازنویسی می‌کند، وگرنه مهاجم می‌تواند با\n"
+"جعل هدر از محدودیت IP عبور کند."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "هدرهای IP پروکسی مورد اعتماد است (X-Forwarded-For / CF-Connecting-IP)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "محدودیت ارسال کد بر اساس IP"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"سقف کلی درخواست‌های ارسال کد پیامک از هر IP در بازه زمانی مشخص؛\n"
+"جلوی هدررفتن اعتبار پیامک با شماره‌های تصادفی را می‌گیرد."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "درخواست، هر"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ثانیه (پیش‌فرض: ۵ درخواست در ۱۰ دقیقه — صفر = بدون محدودیت)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "محدودیت تلاش برای تایید کد بر اساس IP"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"سقف درخواست‌های «تایید کد» از هر IP در بازه زمانی مشخص؛ جلوی حدس\n"
+"زدن کد به‌صورت گروهی را می‌گیرد. (پیش‌فرض: ۲۰ تلاش در ۱۰ دقیقه)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "تلاش، هر"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ثانیه (صفر = بدون محدودیت)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "نقش‌های مجاز ورود با OTP"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"فقط حساب‌هایی که دست‌کم یکی از این نقش‌ها را داشته باشند می‌توانند\n"
+"با پیامک وارد شوند. نقش‌های مدیریتی (مدیر کل، مدیر فروشگاه،\n"
+"ویراستار) همیشه و تحت هر شرایطی از ورود با پیامک منع شده‌اند."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "طول کد یکبار مصرف (OTP)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "تعداد ارقام کد ارسالی برای کاربر"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "رقم (پیش‌فرض: ۵)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "مدت اعتبار کد (ثانیه)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ثانیه (پیش‌فرض: ۱۲۰)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فاصله مجاز ارسال مجدد (ثانیه)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ثانیه (پیش‌فرض: ۶۰)"
+msgstr ""
+
+#: src/Admin/Views/settings.php src/Modules/SMS/SMSManager.php
+msgid ""
+"اطلاعات پنل پیامک با کلید فعلی سایت قابل خواندن نیست؛ لطفاً دوباره\n"
+"وارد کنید."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"تا زمانی که اطلاعات پیامک دوباره وارد و ذخیره نشود، ارسال هر\n"
+"پیامکی متوقف است."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "سرویس‌دهنده پیامک"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"با انتخاب هر سرویس، تنظیمات اختصاصی همان سرویس در ادامه نمایش داده\n"
+"می‌شود. شناسه پترن‌ها در تب‌های مربوطه وارد می‌شود و فرمت آن به\n"
+"سرویس بستگی دارد."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "نام کاربری"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "رمز عبور"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "در صورت عدم تمایل به تغییر، خالی بگذارید."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "کلید API کاوه‌نگار"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"مخصوص سرویس کاوه‌نگار: کلید API را از پنل کاوه‌نگار (بخش حساب\n"
+"کاربری / API Key) کپی کنید. شناسه پترن‌ها در این سرویس «نام قالب»\n"
+"هستند (مثل LoginOtp) و در فیلدهای پترن همین تنظیمات وارد می‌شوند."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "خالی بماند = حفظ مقدار قبلی. این کلید به‌صورت رمزنگاری‌شده ذخیره می‌شود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "کلید API سرویس SMS.ir"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"مخصوص سرویس SMS.ir: کلید API را از پنل SMS.ir (بخش توسعه‌دهندگان /\n"
+"کلیدهای API) کپی کنید. شناسه پترن‌ها در این سرویس «شناسه عددی\n"
+"قالب» هستند و در فیلدهای پترن وارد می‌شوند."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "کلید Api-Key فراز اس‌ام‌اس"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"مخصوص سرویس فراز اس‌ام‌اس (ایران‌پیامک): «کلید API ایستا» را از\n"
+"پنل فراز (بخش مدیریت کلیدها) کپی کنید — هرگز توکن لاگین را وارد\n"
+"نکنید. شناسه پترن‌ها در این سرویس «کد پترن» هستند (مثل\n"
+"SJ3FgPrE0C)."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "شماره خط فرستنده فراز اس‌ام‌اس"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"شماره خط (سرویس) فعال خود در پنل فراز اس‌ام‌اس؛ مثال: 90008361.\n"
+"ارسال پترن بدون این شماره انجام نمی‌شود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "تست ارسال پیامک"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "شماره موبایل"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ارسال پیامک تست"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"توجه: در صورت فعال بودن حالت دمو ورود و ثبت‌نام، پیامکی ارسال\n"
+"نمی‌شود. لطفاً از غیرفعال بودن حالت دمو ورود و ثبت‌نام اطمینان\n"
+"حاصل فرمایید."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"نکته مهم: دکمه «ارسال پیامک تست» تنظیمات را ذخیره نمی‌کند؛ اگر\n"
+"همین حالا کلید API یا تنظیم جدیدی وارد کرده‌اید، اول دکمه «ذخیره\n"
+"تنظیمات» را بزنید و بعد تست بگیرید."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "۱) پیامک تایید سفارش"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "بعد از پرداخت موفق سفارش، پیامک الگو (پترن) برای مشتری ارسال می‌شود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فعال‌سازی پیامک سفارش"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ارسال خودکار پیامک تایید سفارش فعال باشد."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "کد پترن پیامک سفارش"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "شناسه الگو (Body ID) در پنل ملی پیامک (متغیر اول: شماره سفارش)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "وضعیت راه‌انداز ارسال"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "در حال پردازش (پرداخت موفق)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "تکمیل شده (Completed)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "۲) پیامک ارسال و رهگیری مرسوله"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"در صفحه مدیریت هر سفارش (ووکامرس ← سفارش‌ها ← انتخاب سفارش) بخشی\n"
+"برای انتخاب روش حمل و ثبت کد رهگیری اضافه می‌شود؛ با ذخیره،\n"
+"اطلاعیه برای مشتری ثبت و در صورت فعال بودن پیامک، پیامک هم ارسال\n"
+"می‌شود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "پیامک رهگیری مرسوله"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"ارسال پیامک رهگیری برای مشتری (در صورت غیرفعال بودن، فقط اطلاعیه\n"
+"پنل ثبت می‌شود)."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "کد پترن ارسال مرسوله"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "الگوی تاییدشده ملی‌پیامک با دو متغیر"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "{0} = روش حمل (پست، تیپاکس و…) — {1} = کد رهگیری"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "کد پترن «فقط کد رهگیری» (اختیاری)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"وقتی روش حمل را خالی بگذارید و فقط کد رهگیری ثبت کنید، این پترن\n"
+"تک‌متغیره ارسال می‌شود. اگر پترن «ارسال مرسوله» را خالی بگذارید،\n"
+"این پترن همیشه (حتی با روش حمل) استفاده می‌شود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"{0} = کد رهگیری — اگر خالی بماند و روش حملی انتخاب نشود، پیامکی\n"
+"ارسال نمی‌شود (فقط اطلاعیه پنل)."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "۳) یادآوری سفارش در انتظار پرداخت"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"فقط برای کاربران ثبت‌نام‌شده‌ای که سفارششان را تا مرحله درگاه\n"
+"پرداخت پیش برده ولی پرداخت را کامل نکرده‌اند (وضعیت «در انتظار\n"
+"پرداخت/بررسی»). صرفِ افزودن محصول به سبد خرید پیامکی ندارد. هر\n"
+"مشتری در کل فقط یک بار پیامک یادآوری دریافت می‌کند."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فعال‌سازی یادآوری"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"ارسال خودکار یادآوری و کد تخفیف برای سفارش‌های پرداخت‌نشده (فقط یک\n"
+"بار برای هر مشتری)."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"شمارش ساعت یادآوری فقط از لحظه فعال‌سازی این گزینه شروع می‌شود؛\n"
+"سفارش‌هایی که از قبل از فعال‌سازی در انتظار پرداخت بوده‌اند هرگز\n"
+"پیامک نمی‌گیرند. با خاموش و روشن کردن دوباره، شمارش از نو آغاز\n"
+"می‌شود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "درصد تخفیف یادآوری"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "٪"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "وضعیت‌های سفارش در بررسی یادآوری"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"به‌طور پیش‌فرض فقط سفارش‌های «در انتظار پرداخت» (pending) بررسی\n"
+"می‌شوند. در صورت نیاز می‌توانید وضعیت‌های زیر را هم اضافه کنید."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "شامل سفارش‌های «ناموفق» (failed)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "شامل سفارش‌های «در انتظار بررسی» (on-hold)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ارسال یادآوری بعد از (ساعت)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"اگر سفارش مشتری تا این مدت در وضعیت «در انتظار پرداخت» (pending)\n"
+"باقی بماند، پیامک یادآوری و کد تخفیف ارسال می‌شود. بررسی فقط از\n"
+"طریق زمان‌بند وردپرس (WP-Cron) و به‌صورت ساعتی انجام می‌شود؛\n"
+"پیش‌فرض ۲۴."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "حداقل فاصله بین دو یادآوری برای یک مشتری"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"به هر مشتری در این بازه حداکثر یک پیامک یادآوری ارسال می‌شود؛ اگر\n"
+"بعد از گذشت این مدت دوباره سفارشش در انتظار پرداخت رها شود، دوباره\n"
+"یادآوری دریافت می‌کند. هر سفارش در کل فقط یک بار یادآوری می‌شود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "انقضای کد یادآوری (روز)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "کد پترن یادآوری"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "الگوی تاییدشده ملی‌پیامک"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "{0} = کد تخفیف اختصاصی — {1} = درصد تخفیف (اختیاری)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فعال‌سازی گردونه شانس"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "امکان استفاده از گردونه برای خریداران"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ماژول گردونه شانس فعال باشد."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "عنوان صفحه گردونه"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "زیرعنوان صفحه گردونه"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "بنر جذب ثبت‌نام (گردونه شانس)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"وقتی گردونه فعال باشد ولی ورود اجباری برای خرید غیرفعال باشد، در\n"
+"بالای سایت به مهمان‌ها بنر «با ثبت‌نام، گردونه شانس پس از خرید به\n"
+"شما تعلق می‌گیرد» نمایش داده می‌شود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "نمایش بنر تشویقی ثبت‌نام برای مهمان‌ها."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "متن و ظاهر بنر را مطابق سلیقه خود تغییر دهید (پیش‌فرض: بنر گردونه شانس)."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "متن بنر"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "متن دکمه"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "رنگ‌های بنر"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "شروع گرادیان:"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "پایان گرادیان:"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "رنگ دکمه:"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "رنگ متن دکمه:"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "پیشوند کد کوپن"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"برای هر برنده به‌صورت خودکار یک کوپن یکتای یک‌بارمصرف ساخته\n"
+"می‌شود. نمونه: ARMA-X7K2P9QM"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "انقضای کوپن (روز)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "۰ = بدون انقضا"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "تنظیمات بخش‌های گردونه و درصد شانس (Weighted Chance)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"درصد شانس هر آیتم بین ۰ تا ۱۰۰ است و مجموع شانس‌ها نباید از ۱۰۰\n"
+"بیشتر شود — در غیر این صورت ذخیره امکان‌پذیر نیست. درصد ۰ یعنی\n"
+"آیتم روی گردونه نمایش داده می‌شود اما هرگز برنده نمی‌شود (مثلاً\n"
+"معرفی یک جایزه ویژه). اگر مجموع شانس‌ها کمتر از ۱۰۰ باشد،\n"
+"باقیمانده احتمال به‌صورت خودکار به بخش‌های «پوچ» می‌رسد. محاسبه\n"
+"برنده به‌صورت امن روی سرور انجام می‌شود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"نوع جایزه هر بخش یکی از سه حالت است: «تخفیف» (کد تخفیف درصدی یا\n"
+"مبلغ ثابت)، «پوچ» (بدون جایزه) و «ارسال رایگان» (کوپن ارسال رایگان\n"
+"خرید بعدی). فیلدهای نوع مبلغ و مقدار تخفیف فقط برای جایزه نوع\n"
+"«تخفیف» نمایش داده می‌شوند."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "عنوان روی گردونه"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "نوع جایزه"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "مقدار تخفیف"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "درصد شانس (٪)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "رنگ بخش"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "تخفیف"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "پوچ"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ارسال رایگان"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "درصدی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "مبلغ ثابت (تومان)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "مجموع شانس‌ها:"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"خطا: مجموع درصد شانس‌ها از ۱۰۰ بیشتر است! درصد‌ها را طوری تنظیم\n"
+"کنید که حداکثر ۱۰۰ شوند."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ترتیب و نمایش بخش‌های داشبورد"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"ترتیب نمایش بخش‌ها در صفحه اصلی پنل کاربری را با دکمه‌های\n"
+"بالا/پایین تغییر دهید و با برداشتن تیک، هر بخش را از داشبورد حذف\n"
+"کنید. ترتیب فعلی همان ترتیبی است که مشتری در پنل می‌بیند."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "جابه‌جایی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "نمایش"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "بخش داشبورد"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "عنوان سفارشی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "انتقال به بالا"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "انتقال به پایین"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "متغیر {name} با نام کوچک کاربر جایگزین می‌شود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "متن‌ها و مدل نمایش کارت خوش‌آمدگویی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "متن توضیح خوش‌آمدگویی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "متن دکمه فروشگاه"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "چیپ‌های وضعیت (سفارش/در انتظار/تیکت)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "نمایش تعداد سفارش‌ها و تیکت‌های باز داخل کارت خوش‌آمدگویی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "مدل کارت‌های آمار"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "تعداد ستون کارت‌های آمار"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "۲ ستونه"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "۳ ستونه"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "۴ ستونه"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "در موبایل همیشه ۲ ستونه نمایش داده می‌شود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "کارت‌های قابل نمایش"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "دسترسی سریع"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "هر آیتم را می‌توانید مخفی کنید یا عنوان و توضیح آن را تغییر دهید."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "آیتم"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "توضیح"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "مدل و تعداد کارت‌های سفارش"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "چیدمان کارت‌های سفارش"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "کنار هم (دو ستونه)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "زیر هم (تمام‌عرض)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "در موبایل همیشه زیر هم نمایش داده می‌شوند."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "تعداد سفارش‌های «آخرین سفارش‌ها»"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "تعداد سفارش‌های «پرتکرارترین‌ها»"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "📱 حالت گوشی (موبایل) — اولویت چیدمان"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"تنظیمات این بخش فقط نمایش موبایل را تغییر می‌دهند و کاملاً مستقل\n"
+"از دسکتاپ هستند. برای پیش‌نمایش زندهٔ چیدمان گوشی، پارامتر\n"
+"?arma_mobile_preview=1 را به آدرس پنل اضافه کنید."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "مدل منوی کاربری"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "دکمه منو (کلیک برای باز شدن آبشاری)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "همیشه باز (بدون دکمه)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "کارت حساب کاربری بالای منو"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "همان آیکون و نام حساب کاربری که بالای منوی موبایل نمایش داده می‌شود."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "کامل (آواتار + نام + شماره + زنگوله)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "حداقلی (فقط نام و زنگوله — بدون آیکون)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "حذف کامل"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ترتیب و نمایش بخش‌ها در موبایل"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"ترتیب و نمایش بخش‌های داشبورد در گوشی، جدا از دسکتاپ تعیین می‌شود\n"
+"— مثلاً می‌توانید آمار را در موبایل حذف کنید ولی در دسکتاپ نگه\n"
+"دارید."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "تعداد ستون کارت‌های آمار در موبایل"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "۱ ستونه (تمام‌عرض)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "تعداد ستون دسترسی سریع در موبایل"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "توضیح آیتم‌های دسترسی سریع در موبایل"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "نمایش توضیح کوتاه زیر عنوان هر آیتم (به‌صورت پیش‌فرض در موبایل مخفی است)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فعال‌سازی ماژول علاقه‌مندی‌ها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"با فعال بودن ماژول، دکمه قلب در صفحه محصول نمایش داده می‌شود و\n"
+"کاربران می‌توانند محصولات مورد علاقه خود را در پنل کاربری ببینند و\n"
+"مدیریت کنند."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فعال بودن ماژول لیست علاقه‌مندی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "متن دکمه قلب"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "سبک دکمه علاقه‌مندی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "دکمه کامل (قلب + متن)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فقط آیکون قلب کوچک (با کلیک پر می‌شود)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "محل نمایش دکمه در صفحه محصول"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "بعد از دکمه افزودن به سبد خرید"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "قبل از دکمه افزودن به سبد خرید"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "زیر عنوان محصول"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "زیر قیمت محصول"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فقط شورت‌کد (بدون نمایش خودکار)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"اگر صفحه محصول را با المنتور یا صفحه‌ساز می‌سازید، گزینه‌های «زیر\n"
+"عنوان» و «زیر قیمت» کار نمی‌کنند (صفحه‌سازها هوک استاندارد ووکامرس\n"
+"را اجرا نمی‌کنند). در این حالت شورت‌کد زیر را در ویجت شورت‌کد\n"
+"المنتور در هر نقطه از صفحه درج کنید:"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "رنگ قلب و دکمه"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "رفتار کاربر مهمان (واردنشده)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "نمایش دکمه و هدایت به صفحه ورود پیامکی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "مخفی کردن دکمه برای مهمان‌ها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "صفحه علاقه‌مندی‌های پنل کاربری"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "عنوان صفحه علاقه‌مندی‌ها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "تعداد ستون نمایش محصولات"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "نمایش قیمت در کارت محصولات"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "نمایش قیمت هر محصول در لیست علاقه‌مندی‌ها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "دکمه افزودن به سبد خرید"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "نمایش دکمه «افزودن به سبد خرید» روی هر کارت محصول"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "سیستم تیکتینگ و پشتیبانی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فعال بودن ماژول تیکت‌ها و پشتیبانی مشتریان"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+#: src/Modules/Notifications/NotificationsModule.php
+msgid "سیستم اطلاعیه‌ها"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فعال بودن ماژول اعلانات و پیام‌های همگانی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فعال بودن ماژول گردونه شانس خریداران"
+msgstr ""
+
+#: src/Admin/Views/settings.php src/Modules/Wishlist/WishlistModule.php
+msgid "لیست علاقه‌مندی"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "دکمه قلب در صفحه محصول و صفحه علاقه‌مندی‌ها در پنل کاربری."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "پیامک‌های ووکامرس (سفارش و ارسال)"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid ""
+"با خاموش بودن این ماژول، هیچ پیامک سفارش/ارسالی ارسال نمی‌شود و\n"
+"بخش «ارسال و رهگیری مرسوله» از صفحه سفارش حذف می‌گردد."
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "فعال بودن ماژول پیامک‌های ووکامرس"
+msgstr ""
+
+#: src/Admin/Views/settings.php
+msgid "ذخیره تغییرات"
+msgstr ""
+
+#: src/Core/Requirements.php
+msgid ""
+"افزونه آرما پنل نیازمند نسخه PHP حداقل %1$s است. نسخه فعلی سرور\n"
+"شما %2$s می‌باشد."
+msgstr ""
+
+#: src/Core/Requirements.php
+msgid ""
+"افزونه آرما پنل نیازمند نسخه وردپرس حداقل %1$s است. نسخه فعلی شما\n"
+"%2$s می‌باشد."
+msgstr ""
+
+#: src/Core/Requirements.php
+msgid ""
+"افزونه آرما پنل برای کارکرد صحیح نیازمند فعال بودن ووکامرس\n"
+"(WooCommerce) است. لطفاً ابتدا افزونه ووکامرس را نصب و فعال\n"
+"نمایید."
+msgstr ""
+
+#: src/Core/Requirements.php
+msgid ""
+"افزونه آرما پنل نیازمند نسخه ووکامرس حداقل %1$s است. لطفاً ووکامرس\n"
+"را بروزرسانی نمایید."
+msgstr ""
+
+#: src/Modules/Authentication/AuthController.php
+msgid "لطفاً شماره موبایل را وارد نمایید."
+msgstr ""
+
+#: src/Modules/Authentication/AuthController.php
+msgid "لطفاً شماره موبایل و کد تایید را وارد کنید."
+msgstr ""
+
+#: src/Modules/Authentication/AuthController.php
+#: src/Modules/Authentication/AuthService.php
+msgid "در حال حاضر امکان ورود با پیامک برای این شماره وجود ندارد."
+msgstr ""
+
+#: src/Modules/Authentication/AuthController.php
+#: src/Modules/Authentication/AuthService.php
+msgid "با موفقیت وارد شدید."
+msgstr ""
+
+#: src/Modules/Authentication/AuthController.php
+msgid "لطفاً تمام فیلدهای نام و نام خانوادگی را وارد کنید."
+msgstr ""
+
+#: src/Modules/Authentication/AuthService.php
+#: src/Modules/WooCommerce/AddressService.php
+msgid ""
+"شماره موبایل وارد شده معتبر نمی‌باشد. لطفاً یک شماره موبایل معتبر\n"
+"ایران وارد کنید."
+msgstr ""
+
+#: src/Modules/Authentication/AuthService.php src/Modules/OTP/OTPService.php
+msgid "کد تایید با موفقیت ارسال شد."
+msgstr ""
+
+#: src/Modules/Authentication/AuthService.php
+msgid "شماره موبایل معتبر نمی‌باشد."
+msgstr ""
+
+#: src/Modules/Authentication/AuthService.php
+msgid "کد تایید نادرست یا منقضی شده است."
+msgstr ""
+
+#: src/Modules/Authentication/AuthService.php src/Modules/OTP/OTPVerifier.php
+msgid "کد تایید با موفقیت تایید شد."
+msgstr ""
+
+#: src/Modules/Authentication/AuthService.php
+msgid ""
+"شماره موبایل با موفقیت تایید شد. لطفاً نام و نام خانوادگی خود را\n"
+"تکمیل کنید."
+msgstr ""
+
+#: src/Modules/Authentication/AuthService.php
+msgid "اعتبارسنجی شماره منقضی شده است. لطفاً فرآیند ورود را مجدداً آغاز نمایید."
+msgstr ""
+
+#: src/Modules/Authentication/AuthService.php
+msgid "لطفاً نام و نام خانوادگی خود را وارد کنید."
+msgstr ""
+
+#: src/Modules/Authentication/AuthService.php
+msgid "این شماره موبایل قبلاً در سایت ثبت‌نام شده است."
+msgstr ""
+
+#: src/Modules/Authentication/AuthService.php
+msgid "خطا در ایجاد حساب کاربری."
+msgstr ""
+
+#: src/Modules/Authentication/AuthService.php
+msgid "ثبت‌نام شما با موفقیت تکمیل گردید."
+msgstr ""
+
+#: src/Modules/Authentication/AuthenticationModule.php
+msgid "احراز هویت و ورود پیامکی"
+msgstr ""
+
+#: src/Modules/CustomerPanel/CustomerPanelModule.php
+msgid "پنل کاربری اختصاصی"
+msgstr ""
+
+#: src/Modules/CustomerPanel/NavigationManager.php
+msgid "پیشخوان"
+msgstr ""
+
+#: src/Modules/CustomerPanel/NavigationManager.php
+msgid "سفارش‌ها"
+msgstr ""
+
+#: src/Modules/CustomerPanel/NavigationManager.php
+#: src/Modules/CustomerPanel/PanelRouter.php
+msgid "پشتیبانی و تیکت‌ها"
+msgstr ""
+
+#: src/Modules/CustomerPanel/NavigationManager.php
+msgid "نشانی"
+msgstr ""
+
+#: src/Modules/CustomerPanel/NavigationManager.php
+msgid "جزئیات حساب"
+msgstr ""
+
+#: src/Modules/CustomerPanel/PanelPageManager.php
+msgid ""
+"نشانک (slug) «%1$s» که برای صفحه پنل تنظیم شده است، در حال حاضر\n"
+"متعلق به برگه دیگری (شناسه %2$s) است؛ نشانک پنل اعمال نشد. لطفاً\n"
+"نشانک را در تنظیمات تغییر دهید یا برگه تداخل‌کننده را ویرایش کنید."
+msgstr ""
+
+#: src/Modules/CustomerPanel/PanelRouter.php
+msgid "سفارش‌های من"
+msgstr ""
+
+#: src/Modules/CustomerPanel/PanelRouter.php
+msgid "نشانی‌های من"
+msgstr ""
+
+#: src/Modules/CustomerPanel/PanelRouter.php
+msgid "جزئیات حساب من"
+msgstr ""
+
+#: src/Modules/CustomerPanel/PanelRouter.php
+msgid "اطلاعیه‌های من"
+msgstr ""
+
+#: src/Modules/CustomerPanel/PanelRouter.php
+msgid "ورود و ثبت‌نام"
+msgstr ""
+
+#: src/Modules/LuckyWheel/LuckyWheelModule.php
+msgid "گردونه شانس مشتریان"
+msgstr ""
+
+#: src/Modules/LuckyWheel/LuckyWheelService.php
+msgid ""
+"شما اجازه چرخاندن گردونه برای این سفارش را ندارید یا قبلاً از شانس\n"
+"خود استفاده کرده‌اید."
+msgstr ""
+
+#: src/Modules/LuckyWheel/LuckyWheelService.php
+msgid "گردونه شانس در حال حاضر گزینه‌ای ندارد."
+msgstr ""
+
+#: src/Modules/LuckyWheel/LuckyWheelService.php
+msgid ""
+"چرخش دیگری برای این سفارش در حال پردازش است؛ لطفاً چند لحظه دیگر\n"
+"تلاش کنید."
+msgstr ""
+
+#: src/Modules/LuckyWheel/LuckyWheelService.php
+msgid "قبلاً از شانس خود برای این سفارش استفاده کرده‌اید."
+msgstr ""
+
+#: src/Modules/LuckyWheel/LuckyWheelService.php
+msgid "متاسفانه در این دور برنده نشدید. در سفارش‌های بعدی منتظر شما هستیم!"
+msgstr ""
+
+#: src/Modules/LuckyWheel/LuckyWheelService.php
+msgid ""
+"امتیاز شما ثبت شد اما صدور کد تخفیف با خطا مواجه شد؛ لطفاً با\n"
+"پشتیبانی تماس بگیرید."
+msgstr ""
+
+#: src/Modules/LuckyWheel/LuckyWheelService.php
+msgid "جایزه گردونه شانس شما!"
+msgstr ""
+
+#: src/Modules/LuckyWheel/LuckyWheelService.php
+msgid "تبریک! شما در گردونه شانس برنده «%1$s» شدید. کد تخفیف اختصاصی شما: %2$s"
+msgstr ""
+
+#: src/Modules/LuckyWheel/LuckyWheelService.php
+msgid "تبریک! شما برنده شدید: %s"
+msgstr ""
+
+#: src/Modules/Notifications/NotificationController.php
+msgid "لطفاً ابتدا وارد حساب خود شوید."
+msgstr ""
+
+#: src/Modules/Notifications/NotificationController.php
+msgid "علامت‌گذاری به عنوان خوانده شده انجام شد."
+msgstr ""
+
+#: src/Modules/Notifications/NotificationController.php
+msgid "تمام اطلاعیه‌ها به عنوان خوانده شده علامت‌گذاری شدند."
+msgstr ""
+
+#: src/Modules/OTP/OTPModule.php
+msgid "رمز یکبار مصرف (OTP)"
+msgstr ""
+
+#: src/Modules/OTP/OTPService.php
+msgid "شماره موبایل وارد شده معتبر نمی‌باشد."
+msgstr ""
+
+#: src/Modules/OTP/OTPService.php
+msgid ""
+"تعداد درخواست‌های ارسال کد از این شبکه بیش از حد مجاز است؛ لطفاً\n"
+"کمی بعد دوباره تلاش کنید."
+msgstr ""
+
+#: src/Modules/OTP/OTPService.php
+msgid "لطفاً %d ثانیه دیگر مجدداً تلاش نمایید."
+msgstr ""
+
+#: src/Modules/OTP/OTPService.php
+msgid "خطا در ثبت کد تایید در سیستم. لطفاً دوباره تلاش کنید."
+msgstr ""
+
+#: src/Modules/OTP/OTPService.php
+msgid "خطا در ارسال پیامک کد تایید. لطفاً با پشتیبانی تماس بگیرید."
+msgstr ""
+
+#: src/Modules/OTP/OTPVerifier.php
+msgid ""
+"تعداد درخواست‌های تایید از این شبکه بیش از حد مجاز است؛ لطفاً کمی\n"
+"بعد دوباره تلاش کنید."
+msgstr ""
+
+#: src/Modules/OTP/OTPVerifier.php
+msgid ""
+"تعداد تلاش‌های ناموفق برای این شماره بیش از حد مجاز است؛ لطفاً ۱۵\n"
+"دقیقه دیگر تلاش کنید."
+msgstr ""
+
+#: src/Modules/OTP/OTPVerifier.php
+msgid "کد تایید منقضی شده یا یافت نشد. لطفاً مجدداً درخواست ارسال کد دهید."
+msgstr ""
+
+#: src/Modules/OTP/OTPVerifier.php
+msgid "تعداد دفعات وارد کردن کد بیش از حد مجاز است. لطفاً کد جدید دریافت کنید."
+msgstr ""
+
+#: src/Modules/OTP/OTPVerifier.php
+msgid "کد تایید وارد شده نادرست است. (%d تلاش باقیمانده)"
+msgstr ""
+
+#: src/Modules/OTP/OTPVerifier.php
+msgid "کد تایید قبلاً استفاده شده است. لطفاً کد جدید دریافت کنید."
+msgstr ""
+
+#: src/Modules/SMS/Providers/FarazSmsProvider.php
+msgid "کلید Api-Key فراز اس‌ام‌اس در تنظیمات وارد نشده است."
+msgstr ""
+
+#: src/Modules/SMS/Providers/FarazSmsProvider.php
+msgid "کد پترن فراز اس‌ام‌اس (مثل SJ3FgPrE0C) تنظیم نشده است."
+msgstr ""
+
+#: src/Modules/SMS/Providers/FarazSmsProvider.php
+msgid "شماره خط فرستنده فراز اس‌ام‌اس در تنظیمات وارد نشده است."
+msgstr ""
+
+#: src/Modules/SMS/Providers/FarazSmsProvider.php
+msgid ""
+"شماره گیرنده برای فراز اس‌ام‌اس باید با ۰۹ شروع شده و ۱۱ رقم باشد\n"
+"(فرمت +98/0098 پذیرفته نیست و به‌صورت خودکار تبدیل می‌شود)."
+msgstr ""
+
+#: src/Modules/SMS/Providers/FarazSmsProvider.php
+msgid ""
+"نام متغیرهای پترن فراز اس‌ام‌اس تنظیم نشده است. در تنظیمات، فیلد\n"
+"«نام متغیرها» را دقیقاً مطابق متغیرهای تعریف‌شده پترن (بدون %) و\n"
+"به ترتیب وارد کنید؛ مثال: code"
+msgstr ""
+
+#: src/Modules/SMS/Providers/FarazSmsProvider.php
+msgid ""
+"تعداد نام متغیرهای پترن فراز اس‌ام‌اس (%d) با تعداد مقادیر ارسالی\n"
+"(%d) برابر نیست. فیلد «نام متغیرها» را به‌روز کنید."
+msgstr ""
+
+#: src/Modules/SMS/Providers/FarazSmsProvider.php
+msgid "خطا در ارتباط با وب‌سرویس فراز اس‌ام‌اس."
+msgstr ""
+
+#: src/Modules/SMS/Providers/FarazSmsProvider.php
+msgid ""
+"پاسخی از وب‌سرویس فراز اس‌ام‌اس دریافت نشد (احتمالاً WordPress\n"
+"HTTP API در دسترس نیست)."
+msgstr ""
+
+#: src/Modules/SMS/Providers/FarazSmsProvider.php
+msgid "ارسال پترن فراز اس‌ام‌اس ناموفق بود."
+msgstr ""
+
+#: src/Modules/SMS/Providers/FarazSmsProvider.php
+msgid "درخواست پترن فراز اس‌ام‌اس پذیرفته شد (شناسه پیگیری ثبت شد)."
+msgstr ""
+
+#: src/Modules/SMS/Providers/KavenegarProvider.php
+msgid "کلید API کاوه‌نگار در تنظیمات وارد نشده است."
+msgstr ""
+
+#: src/Modules/SMS/Providers/KavenegarProvider.php
+msgid "نام قالب (Template) کاوه‌نگار تنظیم نشده است."
+msgstr ""
+
+#: src/Modules/SMS/Providers/KavenegarProvider.php
+msgid "خطا در ارتباط با وب‌سرویس کاوه‌نگار."
+msgstr ""
+
+#: src/Modules/SMS/Providers/KavenegarProvider.php
+msgid ""
+"پاسخی از وب‌سرویس کاوه‌نگار دریافت نشد (احتمالاً WordPress HTTP\n"
+"API در دسترس نیست)."
+msgstr ""
+
+#: src/Modules/SMS/Providers/KavenegarProvider.php
+msgid "پیامک کاوه‌نگار با موفقیت ثبت شد."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "نام کاربری یا رمز عبور پنل پیامک تنظیم نشده است."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "کد پترن (Body ID) پیامک نامعتبر است."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "خطا در برقراری ارتباط با وب‌سرویس ملی پیامک: %s"
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "پاسخ نامعتبر از وب‌سرویس ملی پیامک (کد وضعیت: %d)"
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "خطای ارتباط SOAP ملی پیامک: %s"
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "پیامک با موفقیت ارسال شد."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "نام کاربری یا رمز عبور پنل پیامک صحیح نمی‌باشد."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "اعتبار ریالی/پیامکی پنل ملی پیامک کافی نمی‌باشد."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "سامانه پیامک در حال بروزرسانی می‌باشد."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "متن حاوی کلمه فیلتر شده می‌باشد."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "کاربر پنل پیامک فعال نمی‌باشد."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "پیامک ارسال نشد."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "مدارک کاربر در سامانه پیامک کامل نمی‌باشد."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "شماره گیرنده‌ای یافت نشد."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "متن پیامک خالی می‌باشد."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "شماره گیرنده نامعتبر است."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "از محدودیت ساعتی یا روزانه ارسال پیامک فراتر رفته‌اید."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "شماره گیرنده در لیست سیاه مخابرات قرار دارد."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "دسترسی استفاده از این وب‌سرویس غیرفعال است."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "محدودیت تعداد شماره (هر بار تنها یک شماره مجاز است)."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "خط ارسالی در سیستم تعریف نشده است."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid ""
+"کد متن پترن (Body ID) ارسالی صحیح نمی‌باشد یا توسط مدیر سامانه\n"
+"تایید نشده است."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "متن ارسالی با متغیرهای مشخص شده در متن پیش‌فرض همخوانی ندارد."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "خطای داخلی در سامانه پیامک رخ داده است."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "خطایی در شماره فرستنده رخ داده است."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "در میان متغیرهای ارسالی، لینک وجود دارد که مجاز نمی‌باشد."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "آی‌پی سرور به دلیل تلاش‌های ناموفق مکرر در سامانه پیامک مسدود شده است."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "الزام تنظیم IP مجاز در پنل ملی پیامک برای استفاده از API."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "الزام استفاده از API Key به جای رمز عبور در پنل پیامک."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "آی‌پی درخواست‌کننده در پنل پیامک تعریف نشده یا معتبر نیست."
+msgstr ""
+
+#: src/Modules/SMS/Providers/MelipayamakProvider.php
+msgid "خطای ناشناخته در ارسال پیامک (کد خطا: %s)"
+msgstr ""
+
+#: src/Modules/SMS/Providers/SmsIrProvider.php
+msgid "کلید API سرویس SMS.ir در تنظیمات وارد نشده است."
+msgstr ""
+
+#: src/Modules/SMS/Providers/SmsIrProvider.php
+msgid "شناسه قالب (Template ID) سرویس SMS.ir باید عددی از پنل SMS.ir باشد."
+msgstr ""
+
+#: src/Modules/SMS/Providers/SmsIrProvider.php
+msgid ""
+"نام پارامترهای قالب SMS.ir تنظیم نشده است. در تنظیمات، فیلد «نام\n"
+"پارامترها» را مطابق جایگذاری‌های قالب (بدون #) وارد کنید؛ مثال:\n"
+"Code"
+msgstr ""
+
+#: src/Modules/SMS/Providers/SmsIrProvider.php
+msgid ""
+"تعداد نام پارامترهای قالب SMS.ir (%d) با تعداد مقادیر ارسالی (%d)\n"
+"برابر نیست. فیلد «نام پارامترها» را به‌روز کنید."
+msgstr ""
+
+#: src/Modules/SMS/Providers/SmsIrProvider.php
+msgid "خطا در ارتباط با وب‌سرویس SMS.ir."
+msgstr ""
+
+#: src/Modules/SMS/Providers/SmsIrProvider.php
+msgid ""
+"پاسخی از وب‌سرویس SMS.ir دریافت نشد (احتمالاً WordPress HTTP API\n"
+"در دسترس نیست)."
+msgstr ""
+
+#: src/Modules/SMS/Providers/SmsIrProvider.php
+msgid "پیامک SMS.ir با موفقیت ثبت شد."
+msgstr ""
+
+#: src/Modules/SMS/SMSManager.php
+msgid "هیچ سرویس‌دهنده پیامکی فعالی یافت نشد."
+msgstr ""
+
+#: src/Modules/SMS/SMSManager.php
+msgid ""
+"کد پترن (Body ID) پیامک اعتبارسنجی در بخش تنظیمات ورود و ثبت‌نام\n"
+"مشخص نشده است."
+msgstr ""
+
+#: src/Modules/SMS/SMSManager.php
+msgid "خطای پیش‌بینی نشده در ارسال پیامک."
+msgstr ""
+
+#: src/Modules/SMS/SMSManager.php
+msgid "سرویس‌دهنده پیامک فعال نیست."
+msgstr ""
+
+#: src/Modules/SMS/SMSManager.php
+msgid "کد پترن پیامک سفارش در بخش پیامک‌های ووکامرس ثبت نشده است."
+msgstr ""
+
+#: src/Modules/SMS/SMSManager.php
+msgid "خطا در ارسال پیامک سفارش."
+msgstr ""
+
+#: src/Modules/SMS/SMSManager.php
+msgid ""
+"هیچ کد پتری برای پیامک ارسال/رهگیری مرسوله ثبت نشده است. در بخش\n"
+"«پیامک ووکامرس ← ۲) پیامک ارسال و رهگیری مرسوله» حداقل یکی از\n"
+"پترن‌های «ارسال مرسوله» یا «فقط کد رهگیری» را پر کنید."
+msgstr ""
+
+#: src/Modules/SMS/SMSManager.php
+msgid ""
+"کد پترن «فقط کد رهگیری» (روش حمل خالی) در بخش پیامک‌های ووکامرس\n"
+"ثبت نشده است."
+msgstr ""
+
+#: src/Modules/SMS/SMSManager.php
+msgid "خطا در ارسال پیامک رهگیری مرسوله."
+msgstr ""
+
+#: src/Modules/SMS/SMSManager.php
+msgid "کد پترن پیامک یادآوری سبد خرید ثبت نشده است."
+msgstr ""
+
+#: src/Modules/SMS/SMSManager.php
+msgid "خطا در ارسال پیامک یادآوری سبد خرید."
+msgstr ""
+
+#: src/Modules/SMS/SMSManager.php
+msgid ""
+"کد پترنی برای ارسال پیامک تست یافت نشد. لطفاً کد پترن را در فیلد\n"
+"مربوطه وارد نمایید."
+msgstr ""
+
+#: src/Modules/SMS/SMSModule.php
+msgid "سیستم پیامک"
+msgstr ""
+
+#: src/Modules/Tickets/TicketController.php
+msgid "لطفاً ابتدا وارد حساب کاربری خود شوید."
+msgstr ""
+
+#: src/Modules/Tickets/TicketService.php
+msgid "برای ثبت تیکت باید وارد حساب خود شوید."
+msgstr ""
+
+#: src/Modules/Tickets/TicketService.php
+msgid "لطفاً موضوع و متن تیکت را وارد نمایید."
+msgstr ""
+
+#: src/Modules/Tickets/TicketService.php
+msgid "خطا در ثبت تیکت. لطفاً دوباره تلاش کنید."
+msgstr ""
+
+#: src/Modules/Tickets/TicketService.php
+msgid "تیکت شما با موفقیت ثبت شد و در اسرع وقت پاسخ داده خواهد شد."
+msgstr ""
+
+#: src/Modules/Tickets/TicketService.php
+msgid "تیکت مورد نظر یافت نشد یا شما دسترسی به آن ندارید."
+msgstr ""
+
+#: src/Modules/Tickets/TicketService.php
+msgid "متن پاسخ نمی‌تواند خالی باشد."
+msgstr ""
+
+#: src/Modules/Tickets/TicketService.php
+msgid "پاسخ شما با موفقیت ارسال شد."
+msgstr ""
+
+#: src/Modules/Tickets/TicketService.php
+msgid "متن پاسخ مدیر خالی است."
+msgstr ""
+
+#: src/Modules/Tickets/TicketService.php
+msgid "پاسخ جدید به تیکت شما"
+msgstr ""
+
+#: src/Modules/Tickets/TicketService.php
+msgid "به تیکت \"%s\" پاسخ داده شد."
+msgstr ""
+
+#: src/Modules/Tickets/TicketService.php
+msgid "پاسخ با موفقیت برای کاربر ارسال شد."
+msgstr ""
+
+#: src/Modules/Tickets/TicketsModule.php
+msgid "تیکتینگ و پشتیبانی"
+msgstr ""
+
+#: src/Modules/Wishlist/WishlistController.php
+msgid "ماژول علاقه‌مندی‌ها غیرفعال است."
+msgstr ""
+
+#: src/Modules/Wishlist/WishlistController.php
+msgid "برای افزودن به علاقه‌مندی‌ها ابتدا وارد حساب کاربری شوید."
+msgstr ""
+
+#: src/Modules/Wishlist/WishlistController.php
+msgid "محصول نامعتبر است."
+msgstr ""
+
+#: src/Modules/Wishlist/WishlistController.php
+msgid "به علاقه‌مندی‌ها اضافه شد."
+msgstr ""
+
+#: src/Modules/Wishlist/WishlistController.php
+msgid "از علاقه‌مندی‌ها حذف شد."
+msgstr ""
+
+#: src/Modules/Wishlist/WishlistController.php
+msgid "خطای پیش‌بینی نشده در علاقه‌مندی‌ها."
+msgstr ""
+
+#: src/Modules/WooCommerce/AbandonedCartManager.php
+msgid "سبد خرید شما منتظر شماست! 🛒"
+msgstr ""
+
+#: src/Modules/WooCommerce/AddressService.php
+msgid "خطا در احراز هویت مشتری."
+msgstr ""
+
+#: src/Modules/WooCommerce/AddressService.php
+msgid "نوع نشانی نامعتبر است."
+msgstr ""
+
+#: src/Modules/WooCommerce/AddressService.php
+msgid "این شماره موبایل به حساب کاربری دیگری متعلق دارد."
+msgstr ""
+
+#: src/Modules/WooCommerce/AddressService.php
+msgid "نشانی با موفقیت بروزرسانی شد."
+msgstr ""
+
+#: src/Modules/WooCommerce/GuestCheckoutManager.php
+msgid "برای تکمیل خرید، ابتدا با شماره موبایل خود وارد حساب کاربری شوید."
+msgstr ""
+
+#: src/Modules/WooCommerce/GuestCheckoutManager.php
+msgid "بنر گردونه شانس"
+msgstr ""
+
+#: src/Modules/WooCommerce/GuestCheckoutManager.php
+msgid "بستن"
+msgstr ""
+
+#: src/Modules/WooCommerce/OrderService.php
+msgid "محصول حذف شده"
+msgstr ""
+
+#: src/Modules/WooCommerce/OrderService.php
+msgid "تکمیل شده"
+msgstr ""
+
+#: src/Modules/WooCommerce/OrderService.php
+msgid "در حال پردازش"
+msgstr ""
+
+#: src/Modules/WooCommerce/OrderService.php
+msgid "در انتظار پرداخت"
+msgstr ""
+
+#: src/Modules/WooCommerce/OrderService.php
+msgid "در انتظار بررسی"
+msgstr ""
+
+#: src/Modules/WooCommerce/OrderService.php
+msgid "لغو شده"
+msgstr ""
+
+#: src/Modules/WooCommerce/OrderService.php
+msgid "مسترد شده"
+msgstr ""
+
+#: src/Modules/WooCommerce/OrderService.php
+msgid "ناموفق"
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid "ارسال و رهگیری مرسوله (آرما پنل)"
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid "خطا در نمایش بخش رهگیری مرسوله."
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid "سفارش برای نمایش اطلاعات ارسال یافت نشد."
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid "روش حمل (اختیاری — دستی):"
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid "مثال: پست پیشتاز، تیپاکس، باربری..."
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid "کد رهگیری مرسوله:"
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid "وضعیت:"
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid "اطلاعیه برای مشتری ارسال شد"
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid "اطلاعیه ارسال نشده"
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid "پیامک ارسال شد"
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid "خطای پیامک:"
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid ""
+"با ذخیره: اگر روش حملی وارد شده باشد پترن «توسط {روش حمل} ارسال شد\n"
+"، کد رهگیری {کد}» و اگر خالی باشد پترن «فقط کد رهگیری» ارسال\n"
+"می‌شود. اگر پترن ارسال مرسوله در تنظیمات خالی باشد، همیشه از پترن\n"
+"«فقط کد رهگیری» استفاده می‌شود."
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid "ذخیره اطلاعات ارسال"
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid ""
+"مشتری عزیز، سفارش شما ( #%3$s ) توسط %1$s ارسال شد. کد رهگیری\n"
+"مرسوله: %2$s"
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid "مشتری عزیز، سفارش شما ( #%2$s ) ارسال شد. کد رهگیری مرسوله: %1$s"
+msgstr ""
+
+#: src/Modules/WooCommerce/ShipmentTrackingManager.php
+msgid "سفارش شما ارسال شد"
+msgstr ""
+
+#: src/Modules/WooCommerce/WooCommerceManager.php
+msgid "این کد تخفیف مخصوص شما نیست."
+msgstr ""
+
+#: src/Modules/WooCommerce/WooCommerceModule.php
+msgid "یکپارچه‌سازی ووکامرس"
+msgstr ""
+
+#: src/Support/ProxyDetector.php
+msgid ""
+"به نظر می‌رسد سایت شما پشت CDN/پروکسی است؛ برای اینکه محدودیت IP\n"
+"برای همه کاربران یکی نشود، گزینه ‹سایت پشت پروکسی مورد اعتماد است›\n"
+"را فعال کنید."
+msgstr ""

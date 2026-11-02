@@ -1,0 +1,138 @@
+/*
+ * Arma Panel — register incentive banner (Lucky Wheel).
+ * Enqueued only while the banner is actually displayed; the customizable
+ * colors arrive as CSS custom properties on .arma-wheel-banner itself.
+ */
+.arma-wheel-banner {
+    direction: rtl;
+    font-family: inherit;
+    background: linear-gradient(120deg, var(--arma-wb-bg1, #0f172a) 0%, var(--arma-wb-bg2, #881337) 130%);
+    color: #fff;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 9998;
+    box-shadow: 0 2px 14px -6px rgba(15, 23, 42, .5);
+}
+
+.arma-wheel-banner__icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .14);
+    border: 1px solid rgba(255, 255, 255, .25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.arma-wheel-banner__icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.arma-wheel-banner__text {
+    font-size: .86rem;
+    font-weight: 600;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.arma-wheel-banner__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: var(--arma-wb-cta, #fbbf24);
+    color: var(--arma-wb-cta-text, #451a03);
+    border: none;
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: .82rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease;
+    box-shadow: 0 4px 14px -4px rgba(251, 191, 36, .7);
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.arma-wheel-banner__cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px -4px rgba(251, 191, 36, .85);
+    color: var(--arma-wb-cta-text, #451a03);
+}
+
+.arma-wheel-banner__cta svg {
+    width: 15px;
+    height: 15px;
+}
+
+/*
+ * Close button — hardened against theme button styles (Woodmart, Elementor,
+ * …). Themes style `button` with higher specificity / !important (grey
+ * background, position, size), which pulled the × out of the corner and
+ * into the flex row next to the CTA. Doubled class + !important on the
+ * layout-critical properties keeps it pinned to the banner's left edge.
+ */
+.arma-wheel-banner .arma-wheel-banner__close {
+    position: absolute !important;
+    left: 14px !important;
+    right: auto !important;
+    top: 50% !important;
+    bottom: auto !important;
+    transform: translateY(-50%) !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, .14) !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+    text-transform: none !important;
+    text-shadow: none !important;
+    cursor: pointer;
+    font-family: inherit;
+    opacity: .85;
+    transition: opacity .15s ease, background-color .15s ease;
+}
+
+.arma-wheel-banner .arma-wheel-banner__close:hover,
+.arma-wheel-banner .arma-wheel-banner__close:focus {
+    background: rgba(255, 255, 255, .28) !important;
+    color: #fff !important;
+    opacity: 1;
+    transform: translateY(-50%) !important;
+    outline: none;
+}
+
+.arma-wheel-banner--spin {
+    animation: armaWbSpinIn .45s ease;
+}
+
+@keyframes armaWbSpinIn {
+    from { opacity: 0; transform: translateY(-12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    .arma-wheel-banner { padding: 10px 12px 10px 48px; gap: 9px; }
+    .arma-wheel-banner .arma-wheel-banner__close { left: 10px !important; width: 26px !important; height: 26px !important; }
+    .arma-wheel-banner__icon { display: none; }
+    .arma-wheel-banner__text { font-size: .76rem; }
+    .arma-wheel-banner__cta { padding: 7px 14px; font-size: .75rem; }
+}
